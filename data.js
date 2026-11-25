@@ -30,13 +30,7 @@ window.PLACES=[
    "It's a loud room, though most people call it fun.",
    "A few dishes come off underseasoned, the jerk duck sausage and dessert in particular."
   ],
-  "tip": "At Bar Kabawa, get the pepper pot duck patty. People call it one of the best things they ate this year.",
-  "sources": [
-   "https://guide.michelin.com/en/new-york-state/new-york/restaurant/kabawa",
-   "https://www.opentable.com/r/kabawa-new-york",
-   "https://en.wikipedia.org/wiki/Kabawa",
-   "https://nominatim.openstreetmap.org (coords)"
-  ]
+  "tip": "At Bar Kabawa, get the pepper pot duck patty. People call it one of the best things they ate this year."
  },
  {
   "id": "iara",
@@ -67,12 +61,7 @@ window.PLACES=[
    "The counter gets loud and hectic.",
    "Dishes can all land at once."
   ],
-  "tip": "Order the full picanha con fritas, not the small skewer, and ask for a table over the counter if you want it quieter.",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/reviews/iara",
-   "https://blog.resy.com/2026/09/iara-nyc/",
-   "https://evgrieve.com/2026/08/brazilian-restaurant-iara-bringing.html"
-  ]
+  "tip": "Order the full picanha con fritas, not the small skewer, and ask for a table over the counter if you want it quieter."
  },
  {
   "id": "torrisi",
@@ -103,12 +92,7 @@ window.PLACES=[
    "One long-awaited dinner got a manic, swearing server and flat starters.",
    "Walking in means queuing before the doors open."
   ],
-  "tip": "Weeknight bar walk-ins work for one. For lunch, get in line about 40 minutes early, because a crowd forms right behind you.",
-  "sources": [
-   "https://torrisinyc.com",
-   "https://torrisinyc.com/location/torrisi",
-   "https://guide.michelin.com/pl/en/new-york-state/new-york/restaurant/torrisi"
-  ]
+  "tip": "Weeknight bar walk-ins work for one. For lunch, get in line about 40 minutes early, because a crowd forms right behind you."
  },
  {
   "id": "viacarota",
@@ -139,11 +123,7 @@ window.PLACES=[
    "The room is tight and always packed.",
    "The insalata verde and the pappardelle are the ones to skip."
   ],
-  "tip": "Try for a bar seat at an off hour, and get the anchovy toast. It comes with a very large slab of butter.",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/reviews/via-carota",
-   "https://guide.michelin.com/en/new-york-state/new-york/restaurant/via-carota"
-  ]
+  "tip": "Try for a bar seat at an off hour, and get the anchovy toast. It comes with a very large slab of butter."
  },
  {
   "id": "graciela",
@@ -173,12 +153,7 @@ window.PLACES=[
    "A few people think it's living off its own hype, and one found the steak forgettable.",
    "Seating can run slow, and one table got the wrong order."
   ],
-  "tip": "Get the ribeye, the morcilla and the fries, and eat at the bar.",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/reviews/graciela",
-   "https://www.opentable.com/r/graciela-new-york",
-   "https://www.timeout.com/newyork/news/one-of-the-worlds-most-acclaimed-steakhouse-teams-just-landed-in-nyc-071626"
-  ]
+  "tip": "Get the ribeye, the morcilla and the fries, and eat at the bar."
  },
  {
   "id": "humm",
@@ -209,12 +184,7 @@ window.PLACES=[
    "One opening-month table sent back an over-salted duck and a bitter sea bass.",
    "That same table had a server who argued over an order mix-up."
   ],
-  "tip": "Walk in for the bar menu and a look at the art rather than fighting for a table.",
-  "sources": [
-   "https://blog.resy.com/2026/10/humm-nyc/",
-   "https://www.theinfatuation.com/new-york/reviews/humm",
-   "https://www.timeout.com/newyork/news/the-eleven-madison-park-crew-is-opening-a-casual-west-village-sister-restaurant-this-week-with-a-rolling-martini-cart-and-a-showpiece-chicken-100626"
-  ]
+  "tip": "Walk in for the bar menu and a look at the art rather than fighting for a table."
  },
  {
   "id": "borgo",
@@ -244,11 +214,7 @@ window.PLACES=[
    "One couple waited over 35 minutes for a table they'd booked a month ahead.",
    "Service can run chilly, and lunch lacks personality."
   ],
-  "tip": "Go for dinner, not lunch.",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/reviews/borgo",
-   "https://timeout.com/newyork/restaurants/borgo"
-  ]
+  "tip": "Go for dinner, not lunch."
  },
  {
   "id": "ambassadorsclubhouse",
@@ -278,12 +244,7 @@ window.PLACES=[
    "The butter chicken chops and lamb chops are good but not memorable.",
    "Desserts, the pistachio soft serve included, underwhelm."
   ],
-  "tip": "Order family-style to keep the pacing smooth, and lead with the beetroot chaat and the ajwaini prawns.",
-  "sources": [
-   "https://ambassadorsclubhouse.com",
-   "https://www.timeout.com/newyork/news/this-highly-anticipated-michelin-starred-restaurant-from-london-is-now-officially-open-in-nomad-021126",
-   "https://galavante.com/destinations/new-york-city/ambassadors-clubhouse-nyc/"
-  ]
+  "tip": "Order family-style to keep the pacing smooth, and lead with the beetroot chaat and the ajwaini prawns."
  },
  {
   "id": "elder",
@@ -311,12 +272,7 @@ window.PLACES=[
   "host_pick": true,
   "say": "It opened in August 2026, and there's no real verdict yet.",
   "heads_up": [],
-  "tip": "Save room for the dessert trolley.",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/reviews/elder",
-   "https://blog.resy.com/2026/08/elder-nyc/",
-   "https://www.timeout.com/newyork/news/this-new-british-indian-chophouse-is-the-latest-in-michelin-chef-sujan-sarkars-big-hudson-yards-takeover-080426"
-  ]
+  "tip": "Save room for the dessert trolley."
  },
  {
   "id": "aquavit",
@@ -347,12 +303,7 @@ window.PLACES=[
    "The bread and butter course is a common miss.",
    "Dessert and the wagyu have each let someone down."
   ],
-  "tip": "The tasting lunch is the easy way in, the bar works if you're on your own, and don't skip the horseradish aquavit shot.",
-  "sources": [
-   "https://guide.michelin.com/en/new-york-state/new-york/restaurant/aquavit",
-   "https://blog.resy.com/2026/09/aquavit-nyc/",
-   "https://www.opentable.ca/aquavit"
-  ]
+  "tip": "The tasting lunch is the easy way in, the bar works if you're on your own, and don't skip the horseradish aquavit shot."
  },
  {
   "id": "jeangeorges",
@@ -383,12 +334,7 @@ window.PLACES=[
    "One recent diner found the service off even though the food was excellent.",
    "Nougatine can have long gaps between courses."
   ],
-  "tip": "At lunch, ask for the Nougatine front room. At dinner, watch for the mignardises cart at the end.",
-  "sources": [
-   "https://www.opentable.com/r/jean-georges-new-york",
-   "https://www.jean-georgesrestaurant.com",
-   "https://guide.michelin.com/en/new-york-state/new-york/restaurant/jean-georges"
-  ]
+  "tip": "At lunch, ask for the Nougatine front room. At dinner, watch for the mignardises cart at the end."
  },
  {
   "id": "bordertown",
@@ -419,11 +365,7 @@ window.PLACES=[
   "heads_up": [
    "There's a line to order and a longer wait for the food."
   ],
-  "tip": "Get the Cadillac margarita while you wait.",
-  "sources": [
-   "https://www.bkmag.com/2026/01/26/border-town-best-new-flour-tortilla-tacos-nyc-opens-greenpoint/",
-   "https://greenpointers.com/2026/01/16/acclaimed-border-town-officially-opens-greenpoint-restaurant"
-  ]
+  "tip": "Get the Cadillac margarita while you wait."
  },
  {
   "id": "perse",
@@ -454,12 +396,7 @@ window.PLACES=[
    "The common complaint is that the decor and presentation feel dated.",
    "One diner got a rude, condescending server in the Salon."
   ],
-  "tip": "If you go on your own, the word is the attention is especially good.",
-  "sources": [
-   "https://www.exploretock.com/perse/experience/288603/main-dining-room-tasting-menu",
-   "https://www.enprimeurclub.com/guide/per-se-nyc-review-2026-is-the-425-3-michelin-star-tasting-menu-actually-worth-it",
-   "https://www.opentable.com/r/per-se"
-  ]
+  "tip": "If you go on your own, the word is the attention is especially good."
  },
  {
   "id": "cubbyhole",
@@ -492,12 +429,7 @@ window.PLACES=[
    "Service can be slow.",
    "The bathrooms can be dirty."
   ],
-  "tip": "Bring cash.",
-  "sources": [
-   "https://outxout.com/blog/lesbian-bars-nyc",
-   "https://timeout.com/newyork/bars/cubbyhole",
-   "https://www.designmynight.com/new-york/bars/west-village/cubbyhole"
-  ]
+  "tip": "Bring cash."
  },
  {
   "id": "somedaybar",
@@ -529,11 +461,7 @@ window.PLACES=[
   "heads_up": [
    "Drag and event nights change the noise level and the crowd."
   ],
-  "tip": "Check Instagram for the night's lineup before you head over.",
-  "sources": [
-   "https://outxout.com/blog/lesbian-bars-nyc",
-   "https://www.nyctourism.com/nightlife/someday-bar"
-  ]
+  "tip": "Check Instagram for the night's lineup before you head over."
  },
  {
   "id": "thestonewallinn",
@@ -566,12 +494,7 @@ window.PLACES=[
    "Bartenders can be rude or slow.",
    "It gets crowded on weekend nights."
   ],
-  "tip": "Go early on a weekday evening, for the history rather than the scene.",
-  "sources": [
-   "https://www.timeout.com/newyork/bars/the-stonewall-inn",
-   "https://thegaypassport.com/venue/the-stonewall-inn/",
-   "https://outxout.com/venue/thestonewallinnnewyorkcity"
-  ]
+  "tip": "Go early on a weekday evening, for the history rather than the scene."
  },
  {
   "id": "bemelmansbar",
@@ -604,12 +527,7 @@ window.PLACES=[
    "The walk-in line is slow, you have to stay in it, and hotel guests get priority.",
    "December crowds are the worst of the year."
   ],
-  "tip": "Walk in on a weekday before the 5:30pm set, and join the Resy notify list.",
-  "sources": [
-   "https://www.rosewoodhotels.com/en/the-carlyle-new-york/dining/bemelmans-bar",
-   "https://blog.resy.com/2025/04/bemelmans-bar-nyc/",
-   "https://www.timeout.com/newyork/bars/bemelmans-bar"
-  ]
+  "tip": "Walk in on a weekday before the 5:30pm set, and join the Resy notify list."
  },
  {
   "id": "martinys",
@@ -640,12 +558,7 @@ window.PLACES=[
   "heads_up": [
    "It's hard to get in without booking ahead."
   ],
-  "tip": "",
-  "sources": [
-   "https://www.theinfatuation.com/new-york/guides/fancy-cocktail-bars-nyc",
-   "https://www.theworlds50best.com/bars/the-list/martinys.html",
-   "https://www.timeout.com/newyork/news/these-4-nyc-bars-were-the-only-u-s-spots-to-make-the-worlds-best-bars-2026-list-100826"
-  ]
+  "tip": ""
  },
  {
   "id": "barpisellino",
@@ -677,11 +590,7 @@ window.PLACES=[
   "heads_up": [
    "It's mostly standing room."
   ],
-  "tip": "Go in the afternoon or early on a weekday.",
-  "sources": [
-   "https://theinfatuation.com/new-york/reviews/bar-pisellino",
-   "https://www.timeout.com/newyork/restaurants/bar-pisellino"
-  ]
+  "tip": "Go in the afternoon or early on a weekday."
  },
  {
   "id": "thefrickkentmonkmanshow",
@@ -713,11 +622,7 @@ window.PLACES=[
   "heads_up": [
    "Walk-in lines can be long without a timed ticket."
   ],
-  "tip": "It's open until 8:30pm on Fridays.",
-  "sources": [
-   "https://www.frick.org/press/kent_monkman_media_alert",
-   "https://frick.org/tickets"
-  ]
+  "tip": "It's open until 8:30pm on Fridays."
  },
  {
   "id": "aireancientbathstribeca",
@@ -749,12 +654,7 @@ window.PLACES=[
    "The massages are the weak part of the visit.",
    "The skylight pool room may be closed for renovation, so confirm which pools are open."
   ],
-  "tip": "Book the baths only, on a weekday, and get your massage somewhere else.",
-  "sources": [
-   "https://beaire.com/en/node/54",
-   "https://timeout.com/newyork/shopping/aire-ancient-baths",
-   "https://www.resortpass.com/hotels/aire-ancient-baths-new-york-tribeca"
-  ]
+  "tip": "Book the baths only, on a weekday, and get your massage somewhere else."
  },
  {
   "id": "fifthaveholidaywindowssakslightshow",
@@ -785,11 +685,7 @@ window.PLACES=[
   "heads_up": [
    "Crowds get heavy, especially evenings and weekends."
   ],
-  "tip": "Weekday mornings are the calmest.",
-  "sources": [
-   "https://theimpression.com/?p=12069392",
-   "https://abc7ny.com/post/saks-fifth-avenue-holiday-windows-midtown/11266021/"
-  ]
+  "tip": "Weekday mornings are the calmest."
  },
  {
   "id": "themetoperadecember",
@@ -818,11 +714,7 @@ window.PLACES=[
   "host_pick": false,
   "say": "No word yet on this season's productions.",
   "heads_up": [],
-  "tip": "Buy direct from metopera.org to avoid resale fees.",
-  "sources": [
-   "https://playbill.com/article/abraham-lincoln-opera-kevin-puts-pulitzer-winning-silent-night-more-to-feature-in-met-operas-2026-27-season",
-   "https://bachtrack.com/22/291/view/436181"
-  ]
+  "tip": "Buy direct from metopera.org to avoid resale fees."
  },
  {
   "id": "themetkrasnerpollock",
@@ -851,11 +743,7 @@ window.PLACES=[
   "host_pick": false,
   "say": "The word is it's gorgeous and mostly convincing, though some question the Krasner-heavy later section.",
   "heads_up": [],
-  "tip": "Go on a weekday morning.",
-  "sources": [
-   "https://www.metmuseum.org/en/exhibitions/krasner-and-pollock-past-continuous",
-   "https://www.metmuseum.org/en/perspectives/exhibition-tour-krasner-and-pollock-past-continuous"
-  ]
+  "tip": "Go on a weekday morning."
  },
  {
   "id": "clementatthepeninsula",
@@ -886,12 +774,7 @@ window.PLACES=[
   "heads_up": [
    "The food can be inconsistent."
   ],
-  "tip": "Saturday a la carte with live music is the better pick.",
-  "sources": [
-   "https://peninsula.com/en/new-york/hotel-fine-dining/clement-restaurant-midtown-manhattan",
-   "https://peninsula.com/en/new-york/special-offers/dining/the-peninsula-sunday-brunch-buffet",
-   "https://hauteliving.com/2026/07/the-20-best-brunches-in-new-york/793201/"
-  ]
+  "tip": "Saturday a la carte with live music is the better pick."
  },
  {
   "id": "balthazar",
@@ -923,11 +806,7 @@ window.PLACES=[
    "Weekend brunch without a booking means a 30-60 minute wait.",
    "It's very loud."
   ],
-  "tip": "Go for weekday breakfast at 7:30am and walk straight in.",
-  "sources": [
-   "https://www.opentable.com/r/balthazar",
-   "https://prod.gcp.timeout.com/newyork/restaurants/balthazar"
-  ]
+  "tip": "Go for weekday breakfast at 7:30am and walk straight in."
  },
  {
   "id": "ilili",
@@ -957,12 +836,7 @@ window.PLACES=[
   "heads_up": [
    "The room is loud, and service can be slow."
   ],
-  "tip": "If you dine in, go to the NoMad original, not Midtown.",
-  "sources": [
-   "https://www.timeout.com/newyork/restaurants/best-middle-eastern-restaurants-in-nyc",
-   "https://order.online/store/ilili-new-york-19920",
-   "https://ililirestaurants.com/location/ilili-nyc"
-  ]
+  "tip": "If you dine in, go to the NoMad original, not Midtown."
  },
  {
   "id": "auzaatar",
@@ -993,12 +867,7 @@ window.PLACES=[
    "Dining in at the East Village spot, service can be slow and inattentive.",
    "The tables are small."
   ],
-  "tip": "",
-  "sources": [
-   "https://page-service.doordash.com/store/au-zaatar-to-go-12th-st-east-village-17870",
-   "https://www.trycaviar.com/en/store/17870",
-   "https://www.opentable.co.uk/r/au-zaatar-new-york"
-  ]
+  "tip": ""
  },
  {
   "id": "balade",
@@ -1028,12 +897,7 @@ window.PLACES=[
   "heads_up": [
    "Delivery orders occasionally come with a missing item, so check the bag."
   ],
-  "tip": "",
-  "sources": [
-   "https://opentable.ie/balade-pitza-and-grill",
-   "https://www.broadwayworld.com/bwwfood-wine/article/BWW-Review-BALADE-A-Treasure-in-the-East-Village-for-Lebanese-Food-20210901",
-   "https://www.zabihah.com/restaurants/cb178dd2-7767-11ef-95ae-6045bdeb9f57/balade-new-york-ny"
-  ]
+  "tip": ""
  },
  {
   "id": "jungsik",
@@ -1067,15 +931,7 @@ window.PLACES=[
    "The middle and later courses can feel formulaic.",
    "The galbi is well cooked but light on char."
   ],
-  "tip": "Don't skip the uni on rice. People name it one of the best dishes of the year.",
-  "sources": [
-   "https://www.jungsik.com/menu/",
-   "https://www.jungsik.com/visit/",
-   "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/jungsik",
-   "https://guide.michelin.com/us/en/article/features/michelin-guide-inspectors-the-first-three-michelin-star-korean-restaurant-in-the-united-states-jungsik-new-york-city",
-   "https://www.theinfatuation.com/new-york/reviews/jungsik",
-   "https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=46332300"
-  ]
+  "tip": "Don't skip the uni on rice. People name it one of the best dishes of the year."
  },
  {
   "id": "minettatavern",
@@ -1109,16 +965,7 @@ window.PLACES=[
    "Some find the Black Label Burger overhyped.",
    "Brunch dishes can be indifferent, and waits run long when it's full."
   ],
-  "tip": "Go for the martini at the bar.",
-  "sources": [
-   "https://www.minettatavernny.com/hours-and-location",
-   "https://www.minettatavernny.com/menus",
-   "https://www.minettatavernny.com/reservations",
-   "https://resy.com/cities/ny/minetta-tavern",
-   "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/minetta-tavern",
-   "https://www.theinfatuation.com/new-york/reviews/minetta-tavern",
-   "https://www.openstreetmap.org/node/4429201691"
-  ]
+  "tip": "Go for the martini at the bar."
  },
  {
   "id": "gramercytavern",
@@ -1153,16 +1000,7 @@ window.PLACES=[
    "The Dining Room tasting can feel safe and not very memorable.",
    "Tavern walk-in waits run around 30 minutes on Friday evenings."
   ],
-  "tip": "Walk into the Tavern bar early or mid-afternoon for the burger.",
-  "sources": [
-   "https://www.gramercytavern.com/reservations/",
-   "https://www.gramercytavern.com/location/gramercy-tavern-the-dining-room/",
-   "https://www.gramercytavern.com/location/gramercy-tavern-the-tavern/",
-   "https://www.gramercytavern.com/tavern-menu/",
-   "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/gramercy-tavern",
-   "https://www.theinfatuation.com/new-york/reviews/gramercy-tavern",
-   "https://www.openstreetmap.org/node/4947722221"
-  ]
+  "tip": "Walk into the Tavern bar early or mid-afternoon for the burger."
  },
  {
   "id": "lattedor",
@@ -1195,15 +1033,7 @@ window.PLACES=[
    "One person who went on that recommendation loved the night but found the steak itself underwhelming.",
    "Early on, the floor service hadn't caught up with the kitchen."
   ],
-  "tip": "Start in the bar, and order the black truffle ravioli side and a cocktail.",
-  "sources": [
-   "https://www.latetedorbydaniel.com/",
-   "https://www.latetedorbydaniel.com/our-menu/dinner",
-   "https://resy.com/cities/new-york-ny/venues/la-tete-dor",
-   "https://guide.michelin.com/us/en/new-york-state/new-york/restaurant/la-tete-d-or",
-   "https://www.timeout.com/newyork/restaurants/la-tete-dor",
-   "https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=525768550"
-  ]
+  "tip": "Start in the bar, and order the black truffle ravioli side and a cocktail."
  },
  {
   "id": "kingcolebarstregis",
@@ -1237,13 +1067,7 @@ window.PLACES=[
    "Weekend crowds lean heavily toward tourists.",
    "It can get too loud for conversation."
   ],
-  "tip": "Make it part of a hotel-bar circuit with Bemelmans.",
-  "sources": [
-   "https://www.marriott.com/en-us/dining/restaurant-bar/nycxr-the-st-regis-new-york/6359135-king-cole-bar.mi",
-   "https://www.marriott.com/en-us/hotels/nycxr-the-st-regis-new-york/dining/",
-   "https://www.theinfatuation.com/new-york/reviews/king-cole-bar-1",
-   "https://www.openstreetmap.org/node/2716011967"
-  ]
+  "tip": "Make it part of a hotel-bar circuit with Bemelmans."
  },
  {
   "id": "thecampbell",
@@ -1277,14 +1101,7 @@ window.PLACES=[
    "Specialty cocktails range from decent to forgettable.",
    "Service can lag when it's packed with commuters."
   ],
-  "tip": "Order a well-made classic and come for the room.",
-  "sources": [
-   "https://www.thecampbellnyc.com/menus/",
-   "https://www.thecampbellnyc.com/location/the-campbell/",
-   "https://www.thecampbellnyc.com/about/",
-   "https://www.timeout.com/newyork/bars/the-campbell",
-   "https://www.openstreetmap.org/node/5319150021"
-  ]
+  "tip": "Order a well-made classic and come for the room."
  },
  {
   "id": "littlebranch",
@@ -1319,13 +1136,7 @@ window.PLACES=[
   "heads_up": [
    "Expect about a 30-minute line on busy nights, and it gets crowded inside."
   ],
-  "tip": "Mind the house rules: no hats for men, and keep your voice down.",
-  "sources": [
-   "https://www.timeout.com/newyork/bars/little-branch",
-   "https://www.theworlds50best.com/discovery/Establishments/US/New-York/Little-Branch.html",
-   "https://www.theinfatuation.com/new-york/reviews/little-branch",
-   "https://nominatim.openstreetmap.org/ui/details.html?osmtype=W&osmid=249665534"
-  ]
+  "tip": "Mind the house rules: no hats for men, and keep your voice down."
  },
  {
   "id": "raineslawroomchelsea",
@@ -1357,14 +1168,6 @@ window.PLACES=[
   "heads_up": [
    "There's no bar to sit at. It's table service only."
   ],
-  "tip": "Double-check the Chelsea room is open before you go, and keep The William in your back pocket for walk-ins.",
-  "sources": [
-   "https://www.raineslawroom.com/",
-   "https://www.raineslawroom.com/raines-law-room-chelsea-contact",
-   "https://resy.com/cities/new-york-ny/venues/raines-law-room",
-   "https://resy.com/cities/new-york-ny/venues/the-raines-law-room-at-the-william",
-   "https://www.timeout.com/newyork/bars/raines-law-room",
-   "https://www.openstreetmap.org/node/5778906637"
-  ]
+  "tip": "Double-check the Chelsea room is open before you go, and keep The William in your back pocket for walk-ins."
  }
 ];

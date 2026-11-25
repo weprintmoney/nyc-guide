@@ -85,7 +85,7 @@ if rn_path.exists():
 PUBLIC_DROP = ("notes", "rd")  # research notes + community-thread data never ship
 PUBLIC_FIELDS = ("id", "name", "address", "neighborhood", "lat", "lng", "category", "cuisine", "price",
                  "price_note", "reservations", "booking_url", "website", "hours_note", "what_to_order", "vibe",
-                 "why", "accolades", "tags", "host_pick", "say", "heads_up", "tip", "sources")
+                 "why", "accolades", "tags", "host_pick", "say", "heads_up", "tip")
 out = [{k: p[k] for k in PUBLIC_FIELDS if k in p} for p in out]  # allowlist: only what the page shows
 body = json.dumps(out, indent=1, ensure_ascii=False)
 body = re.sub(r"\s*\(unverified[^)]*\)", " (check before going)", body)

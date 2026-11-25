@@ -113,7 +113,7 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <p class="note" id="footnote"></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="data.js?v=400e7d9e"></script>
+<script src="data.js?v=72e1c207"></script>
 <script>
 (function(){
 const P = (window.PLACES||[]).map((p,i)=>({...p,id:p.id||('p'+i)}));
@@ -157,7 +157,6 @@ function card(p){
   const tip = p.tip || '';
   const reddit = (say||heads.length||tip) ? `<div class="people"><span class="verdict">What people are saying</span><br>${esc(say)}${heads.length?`<br><span class="meta"><b>Heads up:</b> ${esc(heads.join(' '))}</span>`:''}${tip?`<br><span class="meta"><b>Tip:</b> ${esc(tip)}</span>`:''}</div>`:'';
   const rd='';
-  const src=[...new Set((p.sources||[]).concat(r&&r.threads||[]))].filter(u=>!/reddit\.com/i.test(u));
   return `<article class="card" id="c-${p.id}" data-id="${p.id}">
     <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">My pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
     <h2 data-focus="${p.id}">${esc(p.name)}</h2>
@@ -172,7 +171,6 @@ function card(p){
       <a href="${dirUrl(p)}" target="_blank" rel="noopener">Directions</a>
       <button class="save" data-save="${p.id}" aria-pressed="${saved.has(p.id)}">${saved.has(p.id)?'★ Saved':'☆ Save'}</button>
     </div>
-    ${src.length?`<details><summary>Where this came from (${src.length})</summary><ul class="meta">${src.map(u=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,'').slice(0,60))}</a></li>`).join('')}</ul></details>`:''}
   </article>`;
 }
 const priceN=s=>(s||'').replace(/[^$]/g,'').length;
