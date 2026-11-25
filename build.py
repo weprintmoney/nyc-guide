@@ -51,6 +51,8 @@ for f in places_files:
                 "tips": r.get("tips") or r.get("booking_tips") or "",
                 "threads": r.get("threads", []),
             }
+        if "reddit" in pathlib.Path(f).name:
+            p["tags"] = sorted(set((p.get("tags") or []) + ["crowd-favorite"]))
         p["id"] = key(p["name"])
         out.append(p)
 
@@ -62,7 +64,7 @@ if copy_path.exists():
         if not c:
             problems.append(f"no copy: {p['name']}")
             continue
-        for f in ("cuisine", "why", "price_note", "reservations", "what_to_order", "vibe", "hours_note", "accolades"):
+        for f in ("cuisine", "why", "price_note", "reservations", "what_to_order", "vibe", "hours_note", "accolades", "say", "heads_up", "tip"):
             if f in c:
                 p[f] = c[f]
         if "reddit" in p:
@@ -72,22 +74,28 @@ if copy_path.exists():
 rn_path = pathlib.Path("research/reddit_notes.json")
 if rn_path.exists():
     rn = {key(k): v for k, v in json.loads(rn_path.read_text()).items()}
+    extra = pathlib.Path("research/reddit_notes_added.json")
+    if extra.exists():
+        rn.update({key(k): v for k, v in json.loads(extra.read_text()).items()})
     for p in out:
         v = rn.get(p["id"])
         if v and v.get("verdict") != "thin":
             p["rd"] = {"verdict": v["verdict"], "note": v.get("note", ""), "gripes": v.get("gripes", []),
                        "tip": v.get("tip", ""), "threads": v.get("threads", [])}
-PUBLIC_DROP = ("notes",)  # internal research notes never ship
-for p in out:
-    for f in PUBLIC_DROP:
-        p.pop(f, None)
+PUBLIC_DROP = ("notes", "rd")  # research notes + community-thread data never ship
+PUBLIC_FIELDS = ("id", "name", "address", "neighborhood", "lat", "lng", "category", "cuisine", "price",
+                 "price_note", "reservations", "booking_url", "website", "hours_note", "what_to_order", "vibe",
+                 "why", "accolades", "tags", "host_pick", "say", "heads_up", "tip", "sources")
+out = [{k: p[k] for k in PUBLIC_FIELDS if k in p} for p in out]  # allowlist: only what the page shows
 body = json.dumps(out, indent=1, ensure_ascii=False)
 body = re.sub(r"\s*\(unverified[^)]*\)", " (check before going)", body)
 body = re.sub(r"\bunverified\b", "not confirmed", body, flags=re.I)
+page_copy = copy.get("_page", {}) if copy_path.exists() else {}
 pathlib.Path("data.js").write_text(
+    f"window.PAGE_COPY={json.dumps(page_copy, ensure_ascii=False)};\n"
     f"window.PLACES_UPDATED={json.dumps(datetime.date.today().isoformat())};\n"
     f"window.PLACES={body};\n"
 )
-print(f"{len(out)} places, {sum(1 for p in out if 'reddit' in p)} with reviews")
+print(f"{len(out)} places, {sum(1 for p in out if p.get('say'))} with notes")
 for x in problems:
     print("WARN", x)

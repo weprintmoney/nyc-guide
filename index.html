@@ -60,12 +60,12 @@ main{display:grid;grid-template-columns:minmax(340px,480px) 1fr;max-width:1400px
 .tag.pick{background:var(--accent-soft);color:var(--accent)}
 .price{font-weight:600}
 .why{margin:8px 0}
-dl{margin:8px 0 0;display:grid;grid-template-columns:88px 1fr;gap:4px 10px;font-size:13.5px}
+dl{margin:8px 0 0;display:grid;grid-template-columns:76px 1fr;gap:4px 10px;font-size:13.5px}
 dt{color:var(--muted);font-weight:500}
 dd{margin:0}
-.rd{border-left:3px solid #ff4500}
-.reddit{margin-top:10px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:13.5px}
-.verdict{font-weight:600}
+
+.people{margin-top:10px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:13.5px}
+.verdict{font-weight:600;color:var(--accent)}
 .verdict.strong{color:var(--good)} .verdict.mixed{color:var(--mixed)} .verdict.weak{color:var(--weak)} .verdict.thin{color:var(--muted)}
 .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .links a,.save{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 10px;color:var(--ink);background:var(--surface);cursor:pointer;font-family:inherit}
@@ -91,7 +91,7 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <body>
 <header>
   <h1>NYC, Well Spent</h1>
-  <p class="lede">Where to eat, drink and spend an afternoon, with prices, how to get in and what to order. Tap ☆ to save places and build your own days. "Diners say" sums up recent reviews, minus the "too expensive" complaints.</p>
+  <p class="lede" id="lede">Where to eat, drink and spend an afternoon, with prices, how to get in and what to order. Tap ☆ to save places and build your own days. "Diners say" sums up recent reviews, minus the "too expensive" complaints.</p>
 </header>
 <p class="checknote" id="checknote"></p>
 <div class="filters" id="filters">
@@ -149,15 +149,17 @@ const dirUrl=p=>`https://www.google.com/maps/dir/?api=1&destination=${encodeURIC
 function card(p){
   const r=p.reddit;
   const rows=[
-    ['Price',p.price_note],['Book',p.reservations],[p.category==='do'?'Do':'Order',p.what_to_order],['Vibe',p.vibe],
-    ['Hours',p.hours_note],['Accolades',p.accolades],['Address',p.address]
+    ['Cost',p.price_note],['Getting in',p.reservations],[p.category==='do'?'Do this':'Get this',p.what_to_order],['The feel',p.vibe],
+    ['Hours',p.hours_note],['Cred',p.accolades],['Address',p.address]
   ].filter(x=>x[1]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
-  const reddit = r ? `<div class="reddit"><span class="verdict ${esc(r.verdict)}">Diners say: ${esc({strong:'Strong',mixed:'Mixed',weak:'Weak',thin:'Not much said'}[r.verdict]||r.verdict)}</span> — ${esc(r.summary)}${r.complaints&&r.complaints.length?`<br><span class="meta">Real gripes: ${esc(r.complaints.join('; '))}</span>`:''}${r.tips?`<br><span class="meta">Booking tip: ${esc(r.tips)}</span>`:''}</div>`:'';
-  const d=p.rd;
-  const rd = d ? `<div class="reddit rd"><span class="verdict ${d.verdict==='loved'?'strong':d.verdict==='skeptical'?'weak':'mixed'}">Reddit: ${esc({loved:'Loved',mixed:'Mixed',skeptical:'Skeptical'}[d.verdict]||d.verdict)}</span> — ${esc(d.note)}${d.gripes&&d.gripes.length?`<br><span class="meta">Gripes: ${esc(d.gripes.join('; '))}</span>`:''}${d.tip?`<br><span class="meta">Tip: ${esc(d.tip)}</span>`:''}${(d.threads||[]).length?`<br><span class="meta">Threads: ${d.threads.map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${i+1}</a>`).join(' · ')}</span>`:''}</div>` : '';
-  const src=(p.sources||[]).concat(r&&r.threads||[]);
+  const say = p.say || (r && r.summary) || '';
+  const heads = p.heads_up || [];
+  const tip = p.tip || '';
+  const reddit = (say||heads.length||tip) ? `<div class="people"><span class="verdict">What people are saying</span><br>${esc(say)}${heads.length?`<br><span class="meta"><b>Heads up:</b> ${esc(heads.join(' '))}</span>`:''}${tip?`<br><span class="meta"><b>Tip:</b> ${esc(tip)}</span>`:''}</div>`:'';
+  const rd='';
+  const src=[...new Set((p.sources||[]).concat(r&&r.threads||[]))].filter(u=>!/reddit\.com/i.test(u));
   return `<article class="card" id="c-${p.id}" data-id="${p.id}">
-    <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">Top pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
+    <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">My pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
     <h2 data-focus="${p.id}">${esc(p.name)}</h2>
     <p class="why">${esc(p.why||'')}</p>
     <dl>${rows}</dl>
@@ -170,7 +172,7 @@ function card(p){
       <a href="${dirUrl(p)}" target="_blank" rel="noopener">Directions</a>
       <button class="save" data-save="${p.id}" aria-pressed="${saved.has(p.id)}">${saved.has(p.id)?'★ Saved':'☆ Save'}</button>
     </div>
-    ${src.length?`<details><summary>Sources (${src.length})</summary><ul class="meta">${src.map(u=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,'').slice(0,60))}</a></li>`).join('')}</ul></details>`:''}
+    ${src.length?`<details><summary>Where this came from (${src.length})</summary><ul class="meta">${src.map(u=>`<li><a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.)?/,'').slice(0,60))}</a></li>`).join('')}</ul></details>`:''}
   </article>`;
 }
 const priceN=s=>(s||'').replace(/[^$]/g,'').length;
@@ -204,7 +206,8 @@ document.addEventListener('click',e=>{
   else if(t.dataset.focus){ focus(t.dataset.focus); }
 });
 ['hood','price','tag'].forEach(k=>$('#'+k).addEventListener('change',e=>{state[k]=e.target.value;render();}));
-$('#checknote').innerHTML=`<b>Checked ${window.PLACES_UPDATED||''}.</b> Prices, hours and booking windows come from each venue's page where we could reach it, and from recent guides and reviews otherwise. Before you go, confirm on the <b>Book</b> or <b>Hours &amp; reviews</b> link.`;
+if(window.PAGE_COPY&&window.PAGE_COPY.lede) $('#lede').textContent=window.PAGE_COPY.lede;
+$('#checknote').innerHTML=(window.PAGE_COPY&&window.PAGE_COPY.checknote)||`<b>Checked ${window.PLACES_UPDATED||''}.</b> Prices, hours and booking windows come from each venue's page where we could reach it, and from recent guides and reviews otherwise. Before you go, confirm on the <b>Book</b> or <b>Hours &amp; reviews</b> link.`;
 $('#footnote').textContent=`Researched ${window.PLACES_UPDATED||''}. Prices and hours change, so check the booking page before you go. Saved places stay in this browser only.`;
 render();
 })();
