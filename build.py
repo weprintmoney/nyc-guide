@@ -160,3 +160,20 @@ if page_copy:
     if page_copy.get("checknote"):
         t = re.sub(r'<p class="checknote" id="checknote">.*?</p>', lambda m: f'<p class="checknote" id="checknote">{page_copy["checknote"]}</p>', t, flags=re.S)
     idx.write_text(t)
+
+# agent-readable copy: a plain-text list of every place inside <noscript>, so AI agents that read raw HTML see it
+import html as _h
+rows = []
+for p in sorted(out, key=lambda x: (x["category"], x["name"])):
+    bits = [f"<h3>{_h.escape(p['name'])}</h3>",
+            f"<p>{_h.escape(p['category'].title())} · {_h.escape(p.get('neighborhood',''))} · {_h.escape(p.get('cuisine',''))} · {_h.escape(p.get('price',''))}</p>"]
+    for label, f in (("Why", "why"), ("Notes", "note"), ("Cost", "price_note"), ("Getting in", "reservations"),
+                     ("Get this", "what_to_order"), ("The feel", "vibe"), ("Access", "access"), ("Hours", "hours_note"),
+                     ("Address", "address"), ("Book", "booking_url"), ("Website", "website")):
+        if p.get(f): bits.append(f"<p>{label}: {_h.escape(str(p[f]))}</p>")
+    if p.get("tags"): bits.append(f"<p>Tags: {_h.escape(', '.join(p['tags']))}</p>")
+    rows.append("<article>" + "".join(bits) + "</article>")
+block = '<noscript id="agent-list"><h2>All places</h2>' + "".join(rows) + "</noscript>"
+t = idx.read_text()
+t = re.sub(r'<noscript id="agent-list">.*?</noscript>', lambda m: block, t, flags=re.S) if 'id="agent-list"' in t else t.replace('<p class="note" id="footnote"></p>', '<p class="note" id="footnote"></p>\n' + block)
+idx.write_text(t)
