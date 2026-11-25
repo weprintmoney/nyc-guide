@@ -1,4 +1,4 @@
-window.PAGE_COPY={"lede": "Recommendations from Charlcye, with love", "checknote": "Have your AI agent make an itinerary for you!"};
+window.PAGE_COPY={"lede": "Recommendations from Charlcye, with love", "checknote": "Point your AI agent at this page and have it build an itinerary for you based on your preferences."};
 window.PLACES_UPDATED="2026-11-24";
 window.PLACES=[
  {
