@@ -69,6 +69,14 @@ if copy_path.exists():
             p["reddit"]["summary"] = c.get("review_summary", p["reddit"]["summary"])
             p["reddit"]["complaints"] = c.get("review_complaints", p["reddit"]["complaints"])
             p["reddit"]["tips"] = c.get("review_tips", p["reddit"]["tips"])
+rn_path = pathlib.Path("research/reddit_notes.json")
+if rn_path.exists():
+    rn = {key(k): v for k, v in json.loads(rn_path.read_text()).items()}
+    for p in out:
+        v = rn.get(p["id"])
+        if v and v.get("verdict") != "thin":
+            p["rd"] = {"verdict": v["verdict"], "note": v.get("note", ""), "gripes": v.get("gripes", []),
+                       "tip": v.get("tip", ""), "threads": v.get("threads", [])}
 PUBLIC_DROP = ("notes",)  # internal research notes never ship
 for p in out:
     for f in PUBLIC_DROP:

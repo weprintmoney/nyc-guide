@@ -63,6 +63,7 @@ main{display:grid;grid-template-columns:minmax(340px,480px) 1fr;max-width:1400px
 dl{margin:8px 0 0;display:grid;grid-template-columns:88px 1fr;gap:4px 10px;font-size:13.5px}
 dt{color:var(--muted);font-weight:500}
 dd{margin:0}
+.rd{border-left:3px solid #ff4500}
 .reddit{margin-top:10px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:13.5px}
 .verdict{font-weight:600}
 .verdict.strong{color:var(--good)} .verdict.mixed{color:var(--mixed)} .verdict.weak{color:var(--weak)} .verdict.thin{color:var(--muted)}
@@ -152,6 +153,8 @@ function card(p){
     ['Hours',p.hours_note],['Accolades',p.accolades],['Address',p.address]
   ].filter(x=>x[1]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
   const reddit = r ? `<div class="reddit"><span class="verdict ${esc(r.verdict)}">Diners say: ${esc({strong:'Strong',mixed:'Mixed',weak:'Weak',thin:'Not much said'}[r.verdict]||r.verdict)}</span> — ${esc(r.summary)}${r.complaints&&r.complaints.length?`<br><span class="meta">Real gripes: ${esc(r.complaints.join('; '))}</span>`:''}${r.tips?`<br><span class="meta">Booking tip: ${esc(r.tips)}</span>`:''}</div>`:'';
+  const d=p.rd;
+  const rd = d ? `<div class="reddit rd"><span class="verdict ${d.verdict==='loved'?'strong':d.verdict==='skeptical'?'weak':'mixed'}">Reddit: ${esc({loved:'Loved',mixed:'Mixed',skeptical:'Skeptical'}[d.verdict]||d.verdict)}</span> — ${esc(d.note)}${d.gripes&&d.gripes.length?`<br><span class="meta">Gripes: ${esc(d.gripes.join('; '))}</span>`:''}${d.tip?`<br><span class="meta">Tip: ${esc(d.tip)}</span>`:''}${(d.threads||[]).length?`<br><span class="meta">Threads: ${d.threads.map((u,i)=>`<a href="${esc(u)}" target="_blank" rel="noopener">${i+1}</a>`).join(' · ')}</span>`:''}</div>` : '';
   const src=(p.sources||[]).concat(r&&r.threads||[]);
   return `<article class="card" id="c-${p.id}" data-id="${p.id}">
     <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">Top pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
@@ -159,6 +162,7 @@ function card(p){
     <p class="why">${esc(p.why||'')}</p>
     <dl>${rows}</dl>
     ${reddit}
+    ${rd}
     <div class="links">
       ${p.booking_url?`<a class="primary" href="${esc(p.booking_url)}" target="_blank" rel="noopener">Book</a>`:''}
       ${p.website?`<a href="${esc(p.website)}" target="_blank" rel="noopener">Website</a>`:''}

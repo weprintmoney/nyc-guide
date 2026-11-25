@@ -14,9 +14,9 @@ window.PLACES=[
   "booking_url": "https://www.momofuku.com/restaurants/kabawa",
   "website": "https://www.momofuku.com/restaurants/kabawa",
   "hours_note": "Tuesday to Saturday, 5:30-10pm",
-  "what_to_order": "Roti and bammy to start, the Pepper Shrimp (raw royal red shrimp with sorrel and scotch bonnet), goat with spicy scallop creole, the large-format Chuleta Can Can, and a coconut turnover to share. At Bar Kabawa: patties and a rum daiquiri.",
+  "what_to_order": "Roti and bammy to start, the Pepper Shrimp (raw royal red shrimp with sorrel and scotch bonnet), goat with spicy scallop creole, and a coconut turnover to share. At Bar Kabawa: the patties and a rum daiquiri.",
   "vibe": "Dark green, elegant dining room with a kitchen counter. Dressy-casual, and the room gets lively.",
-  "why": "The most-decorated new restaurant in the city, and the three-course format makes it a far easier evening to plan than a long tasting menu. If you can't get a table, Bar Kabawa next door is the way in.",
+  "why": "One of the most-praised new restaurants in the city, and the three-course format is an easier evening than a long tasting menu. Arrive expecting very good rather than life-changing. If you can't get a table, Bar Kabawa next door is the way in.",
   "accolades": "#1 on the NYT's 100 Best Restaurants in NYC 2026; three NYT stars; Eater and Esquire Best New Restaurant 2025; #14 on North America's 50 Best; Michelin-listed",
   "sources": [
    "https://guide.michelin.com/en/new-york-state/new-york/restaurant/kabawa",
@@ -46,7 +46,22 @@ window.PLACES=[
     "https://www.mapquest.com/us/new-york/kabawa-776991544"
    ]
   },
-  "id": "kabawa"
+  "id": "kabawa",
+  "rd": {
+   "verdict": "mixed",
+   "note": "Most Redditors call the food good but say the #1 ranking sets expectations too high; a few loved it, while others found dishes underseasoned or uneven and the service odd.",
+   "gripes": [
+    "Some dishes underseasoned or bland (jerk duck sausage, dessert)",
+    "Chuleta Can Can served very fatty for one diner",
+    "Service described as weird by one diner"
+   ],
+   "tip": "The duck patties at Bar Kabawa next door got named as a best dish of 2026.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1vi2cwo/kabawa_east_village_dinner_reservation_july_2026/",
+    "https://www.reddit.com/r/FoodNYC/comments/1taufsb/nyt_top_restaurants_2026_full_list_101_added/",
+    "https://www.reddit.com/r/finedining/comments/1x2vl2e/best_high_end_nyc_restaurant_to_go_to_treat/"
+   ]
+  }
  },
  {
   "name": "Iara",
@@ -89,7 +104,19 @@ window.PLACES=[
     "https://www.timeout.com/newyork/news/this-new-lower-east-side-restaurant-channels-the-ingredients-of-the-amazon-102726"
    ]
   },
-  "id": "iara"
+  "id": "iara",
+  "rd": {
+   "verdict": "loved",
+   "note": "Early diners praise the live-fire picanha, the moqueca and the crisp-chewy tapioca fries, and say staff are eager to explain every dish. One poster called it exciting but not a place they crave going back to.",
+   "gripes": [
+    "Dishes can arrive all at once",
+    "Cassava cake was the weakest dessert for one group"
+   ],
+   "tip": "Order the full picanha con fritas rather than the small skewer; there is a private room with a wine pairing for groups.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1y1ovcz/dinner_at_iara_enjoyed_everything_and_a_truly/"
+   ]
+  }
  },
  {
   "name": "Torrisi",
@@ -135,7 +162,20 @@ window.PLACES=[
     "https://blog.resy.com/?p=29860"
    ]
   },
-  "id": "torrisi"
+  "id": "torrisi",
+  "rd": {
+   "verdict": "loved",
+   "note": "Most posters loved the food, drinks and hospitality, with the pastas, duck and affogato singled out. One long-awaited dinner was let down by a frantic server, flat starters and a poor Dover sole.",
+   "gripes": [
+    "Overly manic, swearing server at one dinner",
+    "Starters and Dover sole fell flat for one table"
+   ],
+   "tip": "Solo bar walk-ins work on weeknights; for lunch, line up about 40 minutes before opening because a crowd forms right behind you.",
+   "threads": [
+    "https://www.reddit.com/r/MichelinStars/comments/1v6rk4s/torrisi_in_nyc/",
+    "https://www.reddit.com/r/finedining/comments/1vhz1eh/1_week_in_nyc_jean_georges_muje_aska_torrisi/"
+   ]
+  }
  },
  {
   "name": "Via Carota",
@@ -180,7 +220,20 @@ window.PLACES=[
     "https://www.theworlds50best.com/northamerica/en/the-list/via-carota.html"
    ]
   },
-  "id": "viacarota"
+  "id": "viacarota",
+  "rd": {
+   "verdict": "loved",
+   "note": "Fans say the simple dishes live up to the hype, especially the anchovy and butter toast, gorgonzola gnocchi and mushrooms with scamorza. The main complaint is the wait.",
+   "gripes": [
+    "Long lines and hard reservations; one diner called the wait customer abuse",
+    "The anchovy toast comes with a very large slab of butter"
+   ],
+   "tip": "Try a bar seat at an off hour; order the anchovy toast and the mushrooms with scamorza.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1xj2szg/via_carota_anchovy_and_butter_toast_gorgonzola/",
+    "https://www.reddit.com/r/finedining/comments/1shiyjd/via_carota/"
+   ]
+  }
  },
  {
   "name": "Graciela",
@@ -225,7 +278,19 @@ window.PLACES=[
     "https://galavante.com/destinations/new-york-city/graciela-don-julios-sister-restaurant-in-nyc/"
    ]
   },
-  "id": "graciela"
+  "id": "graciela",
+  "rd": {
+   "verdict": "loved",
+   "note": "Diners call the Argentine ribeye excellent, the service attentive and the sides strong; it also came up in a 2026 steakhouse thread for its sides and service.",
+   "gripes": [
+    "Reservations hard to find online"
+   ],
+   "tip": "Get the ribeye, the morcilla and the fries; eating at the bar works well.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1vk90ep/has_anyone_dined_at_graciela_the_new_argentinian/",
+    "https://www.reddit.com/r/FoodNYC/comments/1xe8rq4/best_nyc_steakhouse_in_2026_all_things_considered/"
+   ]
+  }
  },
  {
   "name": "Humm",
@@ -269,7 +334,20 @@ window.PLACES=[
     "https://www.timeout.com/newyork/news/the-eleven-madison-park-crew-is-opening-a-casual-west-village-sister-restaurant-this-week-with-a-rolling-martini-cart-and-a-showpiece-chicken-100626"
    ]
   },
-  "id": "humm"
+  "id": "humm",
+  "rd": {
+   "verdict": "mixed",
+   "note": "Opening-month reports are split: one table praised the atmosphere and service, another sent back an over-salted duck and a bitter sea bass and found the server combative.",
+   "gripes": [
+    "Two dishes sent back at one dinner",
+    "Server argued about an order mix-up",
+    "Early reports call it uneven, as is common in the first weeks"
+   ],
+   "tip": "",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1x2xiyx/humm_looking_for_anyones_experience_in_opening/"
+   ]
+  }
  },
  {
   "name": "Borgo",
@@ -313,7 +391,20 @@ window.PLACES=[
     "https://www.ifthedevilhadmenopause.com/beguiling-yet-boring-borgonyc-restaurant-review/"
    ]
   },
-  "id": "borgo"
+  "id": "borgo",
+  "rd": {
+   "verdict": "loved",
+   "note": "Several posters pick Borgo for the best food among Manhattan date-night options and call the room calm. One couple waited over 35 minutes for a reserved table and found service chilly.",
+   "gripes": [
+    "35-minute wait for a table booked a month ahead",
+    "Chilly service for one couple"
+   ],
+   "tip": "Choose it for food and a calm room; for more of a scene, posters point elsewhere.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1xpns35/saturday_datenight_dinner_minetta_gramercy_tavern/",
+    "https://www.reddit.com/r/FoodNYC/comments/1xi6kth/roscioli_borgo_or_ci_siamo_for_a_fun_girls_dinner/"
+   ]
+  }
  },
  {
   "name": "Ambassadors Clubhouse",
@@ -329,7 +420,7 @@ window.PLACES=[
   "booking_url": "https://resy.com/cities/new-york-ny/venues/ambassadors-clubhouse-new-york",
   "website": "https://ambassadorsclubhouse.com",
   "hours_note": "Mon-Fri 5-10:30pm; Sat-Sun lunch 12-1:30pm and dinner 5-10:30pm",
-  "what_to_order": "Butter chicken chops from the tandoor, the crispy chilli cheese, house-baked breads and poppadoms, and the frozen yogurt dessert.",
+  "what_to_order": "The beetroot chaat, the prawns, the crispy chilli cheese and the house-baked breads. The chops are a showpiece; dessert is skippable.",
   "vibe": "A maximalist party-mansion of a room, loud and high-energy. Smart casual; 13 and over at dinner.",
   "why": "London's Punjabi hit opened in New York in February 2026. Go for the maximalist room and the tandoor dishes rather than the curries.",
   "accolades": "Its London sibling holds a Michelin star",
@@ -358,7 +449,21 @@ window.PLACES=[
     "https://hauteliving.com/2026/02/inside-ambassadors-clubhouse-new-york/784985/"
    ]
   },
-  "id": "ambassadorsclubhouse"
+  "id": "ambassadorsclubhouse",
+  "rd": {
+   "verdict": "mixed",
+   "note": "Diners rave about the beetroot raj kachori chaat, the prawns and a morel dish, but the most upvoted review calls it overhyped and meat-forward, with butter chicken chops that feel gimmicky.",
+   "gripes": [
+    "Butter chicken chops and lamb chops good but not memorable",
+    "Desserts, including the pistachio soft serve, underwhelm",
+    "Tables very hard to get"
+   ],
+   "tip": "Order the beetroot chaat and the ajwaini prawns; skip dessert and the cheese balls.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1wx7yko/what_is_the_best_of_the_new_upscale_indian/",
+    "https://www.reddit.com/r/FoodNYC/comments/1ud26g7/had_an_amazing_experience_at_ambassadors_clubhouse/"
+   ]
+  }
  },
  {
   "name": "Elder",
@@ -444,7 +549,21 @@ window.PLACES=[
     "https://www.nysun.com/article/food-drink-smart-move"
    ]
   },
-  "id": "aquavit"
+  "id": "aquavit",
+  "rd": {
+   "verdict": "loved",
+   "note": "Recent diners describe an unhurried, well-served tasting menu with standout caviar, langoustine and halibut courses, plus aquavit pours. One longtime diner found the newer era fine but less distinctive.",
+   "gripes": [
+    "Bread and butter course is a common miss",
+    "Wagyu underwhelmed one diner"
+   ],
+   "tip": "The tasting lunch is a strong way in; the aquavit flight or horseradish aquavit shot is a highlight, and the bar works for solo diners.",
+   "threads": [
+    "https://www.reddit.com/r/finedining/comments/1s6hjy3/aquavit/",
+    "https://www.reddit.com/r/FoodNYC/comments/1r754lc/had_lunch_at_aquavit_total_bill_was_about_285/",
+    "https://www.reddit.com/r/finedining/comments/1x2vl2e/best_high_end_nyc_restaurant_to_go_to_treat/"
+   ]
+  }
  },
  {
   "name": "Jean-Georges",
@@ -489,7 +608,19 @@ window.PLACES=[
     "https://fodors.fodors.com/world/north-america/usa/new-york/new-york-city/restaurants/reviews/jean-georges-42453"
    ]
   },
-  "id": "jeangeorges"
+  "id": "jeangeorges",
+  "rd": {
+   "verdict": "loved",
+   "note": "Regulars say it has ranged from good to excellent over many visits and that it gets less attention than it deserves; the mignardises cart and the bread are remembered fondly.",
+   "gripes": [
+    "Duck looked overcooked in one recent meal"
+   ],
+   "tip": "Watch for the mignardises cart at the end; one diner swapped steak for the duck on the 10-course menu.",
+   "threads": [
+    "https://www.reddit.com/r/finedining/comments/1xbwva6/jeangeorges_nyc_a_great_way_to_forget_about/",
+    "https://www.reddit.com/r/finedining/comments/1vhz1eh/1_week_in_nyc_jean_georges_muje_aska_torrisi/"
+   ]
+  }
  },
  {
   "name": "Border Town",
@@ -546,7 +677,7 @@ window.PLACES=[
   "cuisine": "Contemporary American-French from Thomas Keller",
   "price": "$$$$",
   "price_note": "Main dining room tasting menus need a $200pp deposit to book; the 4-course Salon menu, $150pp deposit. Full tasting runs well above the deposit before wine. Holiday lunch Dec 19-20; New Year's Eve dinner $1,200pp prepaid.",
-  "reservations": "Book on Tock, which opens 30 days ahead. The Salon in front serves shorter menus and is the easier first visit.",
+  "reservations": "Book on Tock, which opens 30 days ahead. Go for the main dining room; the Salon menu is shorter but the full experience is the point.",
   "booking_url": "https://www.exploretock.com/perse",
   "website": "https://www.thomaskeller.com/perseny",
   "hours_note": "Dinner from about 4:30pm daily; lunch on select days (see Tock)",
@@ -578,7 +709,22 @@ window.PLACES=[
     "https://www.jancisrobinson.com/articles/per-se-a-case-of-emperors-new-clothes"
    ]
   },
-  "id": "perse"
+  "id": "perse",
+  "rd": {
+   "verdict": "mixed",
+   "note": "Opinion splits: some call it a flawless special-occasion meal and say solo diners are treated like royalty, while the most upvoted critique calls the decor and presentation dated and the food good but not exceptional.",
+   "gripes": [
+    "Decor and presentation feel dated",
+    "Food technically strong but rarely surprising",
+    "One rude, condescending server in the Salon"
+   ],
+   "tip": "Solo diners report especially attentive treatment.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1uvfhod/per_se_by_thomas_keller_3_michelin_nyc_july_2026/",
+    "https://www.reddit.com/r/finedining/comments/1x2vl2e/best_high_end_nyc_restaurant_to_go_to_treat/",
+    "https://www.reddit.com/r/finedining/comments/1s8dnxh/per_se_salon_new_york_ny/"
+   ]
+  }
  },
  {
   "name": "Cubbyhole",
@@ -734,7 +880,7 @@ window.PLACES=[
   "website": "https://www.rosewoodhotels.com/en/the-carlyle-new-york/dining/bemelmans-bar",
   "hours_note": "Sun-Mon noon-midnight, Tue-Thu noon-12:30am; piano and jazz sets around 5:30pm and 9pm",
   "what_to_order": "A martini or a champagne cocktail under the Ludwig Bemelmans murals.",
-  "vibe": "Gold-leaf ceiling, hand-painted murals and live piano. Smart attire.",
+  "vibe": "Gold-leaf ceiling, hand-painted murals and live piano. Smart attire. Gets loud once the music starts; book a table rather than queue.",
   "why": "Old New York at its most atmospheric, and an easy pairing with the Frick or the Met the same day.",
   "accolades": "",
   "tags": [
@@ -763,7 +909,22 @@ window.PLACES=[
     "https://www.timeout.com/newyork/bars/bemelmans-bar"
    ]
   },
-  "id": "bemelmansbar"
+  "id": "bemelmansbar",
+  "rd": {
+   "verdict": "mixed",
+   "note": "Still a go-to recommendation for a classic hotel bar and a martini, but several posters call it touristy and so loud that conversation is hard, with long walk-in waits.",
+   "gripes": [
+    "Very noisy",
+    "Touristy",
+    "Walk-in line is slow, you must stay in it, and hotel guests get priority"
+   ],
+   "tip": "Go early in the evening if walking in; a reservation skips the line but carries a minimum spend.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1u29voz/how_crowded_is_bemelmans_thursday_nights_in_july/",
+    "https://www.reddit.com/r/FoodNYC/comments/1pkb5zv/best_romantic_cocktail_bars_near_central_park/",
+    "https://www.reddit.com/r/AskNYC/comments/1wfbbd8/upscale_bar_for_late_20s_woman_going_alone/"
+   ]
+  }
  },
  {
   "name": "Martiny's",
@@ -808,7 +969,19 @@ window.PLACES=[
     "https://theinfatuation.com/new-york/reviews/martinys"
    ]
   },
-  "id": "martinys"
+  "id": "martinys",
+  "rd": {
+   "verdict": "loved",
+   "note": "Cocktail enthusiasts call it fantastic and a good pick for a special occasion, and group it with the city's nicer, harder-to-book cocktail bars.",
+   "gripes": [
+    "Hard to book for three or more"
+   ],
+   "tip": "",
+   "threads": [
+    "https://www.reddit.com/r/cocktails/comments/1iob1a5/what_are_the_must_goto_cocktail_bars_in_nyc_2025/",
+    "https://www.reddit.com/r/AskNYC/comments/1wfbbd8/upscale_bar_for_late_20s_woman_going_alone/"
+   ]
+  }
  },
  {
   "name": "Bar Pisellino",
@@ -913,7 +1086,7 @@ window.PLACES=[
   "booking_url": "https://beaire.com/en/node/54",
   "website": "https://beaire.com",
   "hours_note": "8am-11pm daily; holiday hours may differ",
-  "vibe": "Candlelit Roman-style baths in a converted warehouse. Hushed.",
+  "vibe": "Candlelit Roman-style baths in a converted warehouse. Calm on a weekday morning; weekends can bring loud groups.",
   "why": "A warm, quiet reset in the middle of winter. There's also an Upper East Side location.",
   "accolades": "",
   "tags": [
@@ -926,7 +1099,7 @@ window.PLACES=[
    "https://timeout.com/newyork/shopping/aire-ancient-baths",
    "https://www.resortpass.com/hotels/aire-ancient-baths-new-york-tribeca"
   ],
-  "what_to_order": "The thermal pools (hot, cold and the flotarium), plus a salt scrub or massage.",
+  "what_to_order": "The thermal pools (hot, cold and the flotarium) and a salt scrub. Go early on a weekday; skip the massage add-on.",
   "host_pick": false,
   "reddit": {
    "verdict": "mixed",
@@ -943,7 +1116,21 @@ window.PLACES=[
     "https://www.resortpass.com/hotels/aire-ancient-baths-new-york-tribeca?date=2026-11-21"
    ]
   },
-  "id": "aireancientbathstribeca"
+  "id": "aireancientbathstribeca",
+  "rd": {
+   "verdict": "skeptical",
+   "note": "Regulars generally prefer the Upper East Side location, calling it newer, better laid out and more relaxing; Tribeca drew reports of loud groups and upkeep problems, and the massages get poor marks.",
+   "gripes": [
+    "Loud groups not managed by staff at Tribeca",
+    "Facility felt messy; one roach sighting",
+    "Massages described as the weak part of the visit"
+   ],
+   "tip": "Book the baths only and get a massage elsewhere; a Saturday mid-morning at the UES location was not crowded.",
+   "threads": [
+    "https://www.reddit.com/r/NYCbitcheswithtaste/comments/1x6od20/how_does_the_aire_ancient_baths_in_the_ues/",
+    "https://www.reddit.com/r/NYCbitcheswithtaste/comments/1r0skaw/aire_ancient_bath_experience_for_a_couple/"
+   ]
+  }
  },
  {
   "name": "Fifth Ave holiday windows + Saks light show",
@@ -1199,7 +1386,19 @@ window.PLACES=[
     "https://theinfatuation.com/new-york/reviews/ilili"
    ]
   },
-  "id": "ilili"
+  "id": "ilili",
+  "rd": {
+   "verdict": "loved",
+   "note": "Posters recommend the original NoMad location, which feels more contemporary and fun than the Midtown branch, and one calls its knafeh elite.",
+   "gripes": [
+    "Midtown location feels more corporate"
+   ],
+   "tip": "Choose the NoMad original over Midtown.",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/1t5e4du/ilili_nomad_vs_midtown/",
+    "https://www.reddit.com/r/FoodNYC/comments/1pbd1rw/lebanese_knafeh_nyc_spots/"
+   ]
+  }
  },
  {
   "name": "Au Za'atar",
@@ -1243,7 +1442,20 @@ window.PLACES=[
     "https://page-service.doordash.com/store/au-zaatar-to-go-12th-st-east-village-17870"
    ]
   },
-  "id": "auzaatar"
+  "id": "auzaatar",
+  "rd": {
+   "verdict": "mixed",
+   "note": "The Midtown East location is praised for very kind staff, but two well-upvoted comments describe inattentive, slow service at the East Village location; one older thread questioned its online reviews.",
+   "gripes": [
+    "Inattentive service at the East Village location",
+    "Doubts raised about the authenticity of its online reviews"
+   ],
+   "tip": "",
+   "threads": [
+    "https://www.reddit.com/r/FoodNYC/comments/12reqe6/au_zaatar_on_58th_may_have_the_nicest_staff_ive/",
+    "https://www.reddit.com/r/AskNYC/comments/sxx9ix/has_anyone_ate_at_au_zaatar/"
+   ]
+  }
  },
  {
   "name": "Balade",
