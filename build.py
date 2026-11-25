@@ -83,6 +83,40 @@ if rn_path.exists():
             p["rd"] = {"verdict": v["verdict"], "note": v.get("note", ""), "gripes": v.get("gripes", []),
                        "tip": v.get("tip", ""), "threads": v.get("threads", [])}
 PUBLIC_DROP = ("notes", "rd")  # research notes + community-thread data never ship
+# reader-facing cleanup: one consistent neighborhood list, a short human "vibe" list, tidy names
+HOOD_MAP = {"West Village": "West & Greenwich Village", "Greenwich Village": "West & Greenwich Village",
+    "Flatiron": "Flatiron, NoMad & Gramercy", "NoMad": "Flatiron, NoMad & Gramercy", "NoMad / Rose Hill": "Flatiron, NoMad & Gramercy",
+    "Gramercy": "Flatiron, NoMad & Gramercy", "Chelsea": "Chelsea & Hudson Yards", "Hudson Yards": "Chelsea & Hudson Yards",
+    "East Village": "East Village & Lower East Side", "Lower East Side": "East Village & Lower East Side",
+    "SoHo": "SoHo, Nolita & Tribeca", "NoLita / NoHo border": "SoHo, Nolita & Tribeca", "Tribeca": "SoHo, Nolita & Tribeca",
+    "Midtown (Fifth Ave)": "Midtown", "Midtown East": "Midtown", "Midtown (Grand Central)": "Midtown",
+    "Lincoln Square / Columbus Circle": "Lincoln Center & Columbus Circle", "Columbus Circle": "Lincoln Center & Columbus Circle",
+    "Lincoln Center, Upper West Side": "Lincoln Center & Columbus Circle",
+    "Boerum Hill, Brooklyn": "Brooklyn", "Greenpoint": "Brooklyn"}
+TAG_MAP = {"splurge": "Splurge", "luxe": "Splurge", "tasting-menu": "Tasting menu", "hard-to-book": "Hard to book",
+    "walk-in": "Walk-ins welcome", "date-night": "Date night", "cocktails": "Cocktails", "late-night": "Late night",
+    "classic": "Classic New York", "historic": "Classic New York", "hotel": "Hotel bar", "hot-new": "New this year",
+    "queer": "Queer bars", "brunch": "Brunch", "culture": "Museums & culture", "museum": "Museums & culture",
+    "art": "Museums & culture", "delivery": "Delivery", "crowd-favorite": "Crowd favorite", "holiday": "Holiday season",
+    "spa": "Spa", "casual": "Casual"}
+NAME_MAP = {"King Cole Bar (St. Regis)": "King Cole Bar at the St. Regis", "Raines Law Room (Chelsea)": "Raines Law Room",
+    "The Met Opera (December)": "The Met Opera"}
+PRICE_FIX = {"bordertown": "$$", "iara": "$$", "bemelmansbar": "$$$", "minettatavern": "$$$$",
+             "fifthaveholidaywindowssakslightshow": "Free", "fifthavenueholidaywindowsandthesakslightshow": "Free"}
+TAG_DROP = {"clementatthepeninsulanewyork": {"hotel"}, "clementatthepeninsula": {"hotel"},
+            "thefrickcollectionmonkmanatthecabinetgallery": {"luxe", "splurge"}, "thefrickkentmonkmanshow": {"luxe", "splurge"},
+            "iara": {"late-night"}}
+TAG_ADD = {"graciela": {"date-night", "splurge"}}
+ov_path = pathlib.Path("research/overrides.json")
+overrides = json.loads(ov_path.read_text()) if ov_path.exists() else {}
+for p in out:
+    p["tags"] = sorted((set(p.get("tags") or []) - TAG_DROP.get(p["id"], set())) | TAG_ADD.get(p["id"], set()))
+    if p["id"] in PRICE_FIX: p["price"] = PRICE_FIX[p["id"]]
+    p.update({k: v for k, v in overrides.get(p["id"], {}).items() if v})
+for p in out:
+    p["neighborhood"] = HOOD_MAP.get(p.get("neighborhood"), p.get("neighborhood"))
+    p["tags"] = sorted({TAG_MAP[t] for t in p.get("tags") or [] if t in TAG_MAP})
+    p["name"] = NAME_MAP.get(p["name"], p["name"])
 PUBLIC_FIELDS = ("id", "name", "address", "neighborhood", "lat", "lng", "category", "cuisine", "price",
                  "price_note", "reservations", "booking_url", "website", "hours_note", "what_to_order", "vibe",
                  "why", "accolades", "tags", "host_pick", "say", "heads_up", "tip")
@@ -104,3 +138,12 @@ for x in problems:
 v = hashlib.sha1(pathlib.Path("data.js").read_bytes()).hexdigest()[:8]
 idx = pathlib.Path("index.html")
 idx.write_text(re.sub(r'<script src="data\.js(\?v=[0-9a-f]+)?"></script>', f'<script src="data.js?v={v}"></script>', idx.read_text()))
+
+# bake page copy (intro + check note) into index.html so it shows without JS or cache lag
+if page_copy:
+    t = idx.read_text()
+    if page_copy.get("lede"):
+        t = re.sub(r'<p class="lede" id="lede">.*?</p>', lambda m: f'<p class="lede" id="lede">{page_copy["lede"]}</p>', t, flags=re.S)
+    if page_copy.get("checknote"):
+        t = re.sub(r'<p class="checknote" id="checknote">.*?</p>', lambda m: f'<p class="checknote" id="checknote">{page_copy["checknote"]}</p>', t, flags=re.S)
+    idx.write_text(t)

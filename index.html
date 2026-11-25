@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NYC, Well Spent</title>
+<title>Denny Does NYC 2027</title>
 <meta name="description" content="A map of places to eat, drink and do in New York, with notes, prices and booking tips.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,6 @@ dd{margin:0}
 
 .people{margin-top:10px;padding:8px 10px;border-radius:8px;background:var(--bg);font-size:13.5px}
 .verdict{font-weight:600;color:var(--accent)}
-.verdict.strong{color:var(--good)} .verdict.mixed{color:var(--mixed)} .verdict.weak{color:var(--weak)} .verdict.thin{color:var(--muted)}
 .links{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
 .links a,.save{font-size:13px;text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:5px 10px;color:var(--ink);background:var(--surface);cursor:pointer;font-family:inherit}
 .links a.primary{background:var(--accent);border-color:var(--accent);color:var(--surface);font-weight:600}
@@ -90,10 +89,10 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 </head>
 <body>
 <header>
-  <h1>NYC, Well Spent</h1>
-  <p class="lede" id="lede">This is my short list for New York right now: where I'd eat, drink and spend an afternoon. Filter by what you're in the mood for and tap a pin for the details. Hit ☆ on anything that sounds good and build your own days from there.</p>
+  <h1>Denny Does NYC 2027</h1>
+  <p class="lede" id="lede">Recommendations from Charlcye, with love</p>
 </header>
-<p class="checknote" id="checknote">Everything here was checked on <b>2026-11-24</b>. Hours and booking rules change, so confirm on the <b>Book</b> or <b>Hours &amp; reviews</b> link before you go.</p>
+<p class="checknote" id="checknote">Have your AI agent make an itinerary for you!</p>
 <div class="filters" id="filters">
   <button class="chip" data-cat="all" aria-pressed="true">All</button>
   <button class="chip" data-cat="eat" aria-pressed="false">Eat</button>
@@ -101,8 +100,8 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
   <button class="chip" data-cat="do" aria-pressed="false">Do</button>
   <span class="sep"></span>
   <select class="chip" id="hood" aria-label="Neighborhood"><option value="">All neighborhoods</option></select>
-  <select class="chip" id="price" aria-label="Price"><option value="">Any price</option><option>$</option><option>$$</option><option>$$$</option><option>$$$$</option></select>
-  <select class="chip" id="tag" aria-label="Tag"><option value="">Any vibe</option></select>
+  <select class="chip" id="price" aria-label="Price"><option value="">Any price</option><option>Free</option><option>$</option><option>$$</option><option>$$$</option><option>$$$$</option></select>
+  <select class="chip" id="tag" aria-label="Tag"><option value="">Filter by…</option></select>
   <button class="chip" id="savedOnly" aria-pressed="false">☆ Saved only</button>
   <span class="count" id="count"></span>
 </div>
@@ -113,7 +112,7 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <p class="note" id="footnote"></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="data.js?v=72e1c207"></script>
+<script src="data.js?v=d66b1850"></script>
 <script>
 (function(){
 const P = (window.PLACES||[]).map((p,i)=>({...p,id:p.id||('p'+i)}));
@@ -138,7 +137,7 @@ const markers={};
 P.forEach(p=>{
   if(p.lat==null||p.lng==null) return;
   const icon=()=>L.divIcon({className:'',iconSize:[26,26],iconAnchor:[13,26],popupAnchor:[0,-24],
-    html:`<div class="pin ${saved.has(p.id)?'saved':''}" style="background:${color(p.category)}"><span>${p.category==='eat'?'E':p.category==='drink'?'D':'★'}</span></div>`});
+    html:`<div class="pin ${saved.has(p.id)?'saved':''}" style="background:${color(p.category)}"><span>${p.category==='eat'?'E':p.category==='drink'?'D':'T'}</span></div>`});
   const m=L.marker([p.lat,p.lng],{icon:icon(),title:p.name});
   m.bindPopup(`<b>${esc(p.name)}</b><br>${esc(p.cuisine||'')} · <b style="font-family:Inter">${esc(p.price||'')}</b><br>${esc(p.neighborhood||'')}`);
   m.on('click',()=>focus(p.id,false));
@@ -155,15 +154,13 @@ function card(p){
   const say = p.say || (r && r.summary) || '';
   const heads = p.heads_up || [];
   const tip = p.tip || '';
-  const reddit = (say||heads.length||tip) ? `<div class="people"><span class="verdict">What people are saying</span><br>${esc(say)}${heads.length?`<br><span class="meta"><b>Heads up:</b> ${esc(heads.join(' '))}</span>`:''}${tip?`<br><span class="meta"><b>Tip:</b> ${esc(tip)}</span>`:''}</div>`:'';
-  const rd='';
+  const reddit = (say||heads.length||tip) ? `<div class="people">${say?`<span class="verdict">What people are saying</span><br>${esc(say)}`:''}${heads.length?`${say?'<br>':''}<span class="meta"><b>Heads up:</b> ${esc(heads.join(' '))}</span>`:''}${tip?`<br><span class="meta"><b>Tip:</b> ${esc(tip)}</span>`:''}</div>`:'';
   return `<article class="card" id="c-${p.id}" data-id="${p.id}">
     <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">My pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
     <h2 data-focus="${p.id}">${esc(p.name)}</h2>
     <p class="why">${esc(p.why||'')}</p>
     <dl>${rows}</dl>
     ${reddit}
-    ${rd}
     <div class="links">
       ${p.booking_url?`<a class="primary" href="${esc(p.booking_url)}" target="_blank" rel="noopener">Book</a>`:''}
       ${p.website?`<a href="${esc(p.website)}" target="_blank" rel="noopener">Website</a>`:''}
@@ -177,13 +174,13 @@ const priceN=s=>(s||'').replace(/[^$]/g,'').length;
 function visible(p){
   if(state.cat!=='all'&&p.category!==state.cat) return false;
   if(state.hood&&p.neighborhood!==state.hood) return false;
-  if(state.price&&priceN(p.price)!==state.price.length) return false;
+  if(state.price&&(state.price==='Free'?p.price!=='Free':priceN(p.price)!==state.price.length)) return false;
   if(state.tag&&!(p.tags||[]).includes(state.tag)) return false;
   if(state.savedOnly&&!saved.has(p.id)) return false;
   return true;
 }
 function render(){
-  const vis=P.filter(visible).sort((a,b)=>(b.host_pick?1:0)-(a.host_pick?1:0)||a.name.localeCompare(b.name));
+  const vis=P.filter(visible).sort((a,b)=>(state.cat!=='all'?(b.host_pick?1:0)-(a.host_pick?1:0):0)||a.name.localeCompare(b.name));
   $('#list').innerHTML=vis.map(card).join('')||'<p class="meta">Nothing matches. Loosen a filter.</p>';
   $('#count').textContent=`${vis.length} of ${P.length} places · ${saved.size} saved`;
   const ids=new Set(vis.map(p=>p.id));
@@ -204,7 +201,7 @@ document.addEventListener('click',e=>{
   else if(t.dataset.focus){ focus(t.dataset.focus); }
 });
 ['hood','price','tag'].forEach(k=>$('#'+k).addEventListener('change',e=>{state[k]=e.target.value;render();}));
-$('#footnote').textContent=`Researched ${window.PLACES_UPDATED||''}. Prices and hours change, so check the booking page before you go. Saved places stay in this browser only.`;
+$('#footnote').textContent=`Anything you ☆ stays saved on this device.`;
 render();
 })();
 </script>
