@@ -64,7 +64,7 @@ if copy_path.exists():
         if not c:
             problems.append(f"no copy: {p['name']}")
             continue
-        for f in ("cuisine", "why", "price_note", "reservations", "what_to_order", "vibe", "hours_note", "accolades", "say", "heads_up", "tip"):
+        for f in ("cuisine", "why", "price_note", "reservations", "what_to_order", "vibe", "hours_note", "accolades", "say", "heads_up", "tip", "note"):
             if f in c:
                 p[f] = c[f]
         if "reddit" in p:
@@ -113,13 +113,25 @@ for p in out:
     p["tags"] = sorted((set(p.get("tags") or []) - TAG_DROP.get(p["id"], set())) | TAG_ADD.get(p["id"], set()))
     if p["id"] in PRICE_FIX: p["price"] = PRICE_FIX[p["id"]]
     p.update({k: v for k, v in overrides.get(p["id"], {}).items() if v})
+VOCAB = {"Splurge", "Tasting menu", "Hard to book", "Walk-ins welcome", "Date night", "Cocktails", "Wine bar", "Late night",
+         "Classic New York", "Hotel bar", "New this year", "Queer bars", "Brunch", "Coffee & breakfast", "Museums & culture",
+         "Shows & music", "Holiday season", "Spa", "Shopping", "Views", "Delivery", "Easy on the feet"}
+tags_path, access_path = pathlib.Path("research/tags.json"), pathlib.Path("research/access.json")
+TAGS = json.loads(tags_path.read_text()) if tags_path.exists() else {}
+ACCESS = json.loads(access_path.read_text()) if access_path.exists() else {}
 for p in out:
     p["neighborhood"] = HOOD_MAP.get(p.get("neighborhood"), p.get("neighborhood"))
-    p["tags"] = sorted({TAG_MAP[t] for t in p.get("tags") or [] if t in TAG_MAP})
+    raw = TAGS.get(p["id"], p.get("tags") or [])
+    p["tags"] = sorted({t if t in VOCAB else TAG_MAP.get(t) for t in raw} - {None})
+    a = ACCESS.get(p["id"])
+    if a:
+        p["access"] = a.get("access", "")
+        if a.get("easy"): p["tags"] = sorted(set(p["tags"]) | {"Easy on the feet"})
+        else: p["tags"] = [t for t in p["tags"] if t != "Easy on the feet"]
     p["name"] = NAME_MAP.get(p["name"], p["name"])
 PUBLIC_FIELDS = ("id", "name", "address", "neighborhood", "lat", "lng", "category", "cuisine", "price",
                  "price_note", "reservations", "booking_url", "website", "hours_note", "what_to_order", "vibe",
-                 "why", "accolades", "tags", "host_pick", "say", "heads_up", "tip")
+                 "why", "accolades", "tags", "host_pick", "note", "say", "heads_up", "tip", "access")
 out = [{k: p[k] for k in PUBLIC_FIELDS if k in p} for p in out]  # allowlist: only what the page shows
 body = json.dumps(out, indent=1, ensure_ascii=False)
 body = re.sub(r"\s*\(unverified[^)]*\)", " (check before going)", body)

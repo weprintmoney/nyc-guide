@@ -112,7 +112,7 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <p class="note" id="footnote"></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="data.js?v=d66b1850"></script>
+<script src="data.js?v=c823ae28"></script>
 <script>
 (function(){
 const P = (window.PLACES||[]).map((p,i)=>({...p,id:p.id||('p'+i)}));
@@ -149,12 +149,10 @@ function card(p){
   const r=p.reddit;
   const rows=[
     ['Cost',p.price_note],['Getting in',p.reservations],[p.category==='do'?'Do this':'Get this',p.what_to_order],['The feel',p.vibe],
-    ['Hours',p.hours_note],['Cred',p.accolades],['Address',p.address]
+    ['Access',p.access],['Hours',p.hours_note],['Cred',p.accolades],['Address',p.address]
   ].filter(x=>x[1]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
-  const say = p.say || (r && r.summary) || '';
-  const heads = p.heads_up || [];
-  const tip = p.tip || '';
-  const reddit = (say||heads.length||tip) ? `<div class="people">${say?`<span class="verdict">What people are saying</span><br>${esc(say)}`:''}${heads.length?`${say?'<br>':''}<span class="meta"><b>Heads up:</b> ${esc(heads.join(' '))}</span>`:''}${tip?`<br><span class="meta"><b>Tip:</b> ${esc(tip)}</span>`:''}</div>`:'';
+  const notes = p.note || [p.say, ...(p.heads_up||[]), p.tip].filter(Boolean).join(' ');
+  const reddit = notes ? `<div class="people"><b>Notes:</b> ${esc(notes)}</div>` : '';
   return `<article class="card" id="c-${p.id}" data-id="${p.id}">
     <div class="row"><span class="tag ${p.category}">${esc(p.category)}</span>${p.host_pick?'<span class="tag pick">My pick</span>':''}<span class="price">${esc(p.price||'')}</span><span class="meta">${esc(p.neighborhood||'')} · ${esc(p.cuisine||'')}</span></div>
     <h2 data-focus="${p.id}">${esc(p.name)}</h2>

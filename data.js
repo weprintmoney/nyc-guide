@@ -21,15 +21,17 @@ window.PLACES=[
   "why": "One of my favorites this year, and three courses make an easier night than a marathon tasting.",
   "accolades": "No. 1 on the NYT's 100 Best Restaurants in NYC 2026; three NYT stars; Esquire Best New Restaurant 2025; No. 14 on North America's 50 Best; in the Michelin Guide",
   "tags": [
+   "Date night",
+   "Hard to book",
    "New this year",
    "Splurge"
   ],
   "host_pick": true,
-  "say": "The food and service get a lot of love. A No. 1 ranking sets the bar very high, so a few leave calling it great but uneven.",
-  "heads_up": [
-   "It's a loud room, though most find that part of the fun."
-  ],
-  "tip": "If the main room is full, Bar Kabawa next door holds room for walk-ins. Get the pepper pot duck patty."
+  "note": "Food and service are great. Loud room, but that's part of the fun. If it's full, walk in to Bar Kabawa next door and get the pepper pot duck patty.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables or counter stools; alley entrance."
  },
  {
   "id": "iara",
@@ -48,17 +50,19 @@ window.PLACES=[
   "hours_note": "Tue–Sat 5–11pm; closed Sun–Mon",
   "what_to_order": "Pão de queijo with three dips, the full picanha (not the small skewer) with Amazonian au poivre, the moqueca, and cassava fries with açaí ketchup.",
   "vibe": "Open kitchen, woodsmoke and hand-painted murals. Casual, loud and busy.",
-  "why": "One of the openings everyone's talking about this fall, and I love it. Unusual Amazonian-Brazilian cooking and a buzzy counter.",
+  "why": "One of the best openings this fall, and I love it. Unusual Amazonian-Brazilian cooking and a buzzy counter.",
   "accolades": "",
   "tags": [
-   "New this year"
+   "Easy on the feet",
+   "New this year",
+   "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "It's new this fall, so it's early, but plenty already count it among the most exciting food in town. The picanha, the moqueca and the cassava fries are the hits, and the staff love walking you through every dish.",
-  "heads_up": [
-   "The counter gets loud and hectic, and dishes can all land at once."
-  ],
-  "tip": "The chef's counter puts you right in the action. For a quieter meal, ask for a table away from it."
+  "note": "The picanha, moqueca and cassava fries are the hits. Counter seats put you in the action but get loud, so ask for a table if you want quiet.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables; open kitchen, busy and loud."
  },
  {
   "id": "torrisi",
@@ -84,11 +88,11 @@ window.PLACES=[
    "Splurge"
   ],
   "host_pick": true,
-  "say": "It's often ranked as Major Food Group's best, and the pastas, duck and affogato come up again and again. It's a bit of a show, which is either the point or the problem.",
-  "heads_up": [
-   "Walking in means queuing before the doors open."
-  ],
-  "tip": "Weeknights are the easiest for the bar. For lunch, get in line about 40 minutes early, because a crowd forms right behind you."
+  "note": "Pastas, duck and affogato are the moves. Bit of a show. For the bar, weeknights are easiest; for lunch, line up ~40 min early.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated dinner; walk-in line forms outside."
  },
  {
   "id": "viacarota",
@@ -110,14 +114,15 @@ window.PLACES=[
   "why": "The quintessential West Village dinner, and the wait is part of the ritual. One of my favorites. Go early.",
   "accolades": "In the Michelin Guide",
   "tags": [
+   "Date night",
    "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "Regulars say there's always a wait and it's always worth it. The simple things deliver, especially the anchovy and butter toast, the gorgonzola gnocchi and the mushrooms with scamorza.",
-  "heads_up": [
-   "The room is tight and always packed."
-  ],
-  "tip": "Try for a bar seat at an off hour, and add the anchovy toast. It comes with a very large slab of butter."
+  "note": "Always a wait, always worth it. Tight, packed room. Try the bar at an off hour and add the anchovy toast (huge slab of butter).",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Step-free main entrance on Grove St; seated, but walk-in waits are on the sidewalk."
  },
  {
   "id": "graciela",
@@ -140,14 +145,15 @@ window.PLACES=[
   "accolades": "Sister restaurant Don Julio holds a Michelin star",
   "tags": [
    "Date night",
+   "Easy on the feet",
    "Splurge"
   ],
   "host_pick": true,
-  "say": "It's widely seen as a worthy sequel to Don Julio. The ribeye is the consensus order, the empanadas and sides win fans, and the service is attentive.",
-  "heads_up": [
-   "Seating can run slow at peak times."
-  ],
-  "tip": "Add the morcilla and the fries, and eat at the bar."
+  "note": "Get the ribeye, plus the morcilla and fries. Eat at the bar. Seating can run slow at peak times.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Large seated dining room around the grill."
  },
  {
   "id": "humm",
@@ -169,14 +175,16 @@ window.PLACES=[
   "why": "Daniel Humm's relaxed, a la carte answer to Eleven Madison Park, new this fall. I love the room and the art, and it's worth it even if you only sit at the bar.",
   "accolades": "",
   "tags": [
-   "New this year"
+   "Easy on the feet",
+   "New this year",
+   "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "It's brand new, and the early read is that it's warmer and looser than Eleven Madison Park.",
-  "heads_up": [
-   "It's still finding its feet, so expect the odd uneven dish."
-  ],
-  "tip": "Walk in for the bar menu and a look at the art rather than fighting for a table."
+  "note": "Warmer and looser than Eleven Madison Park. Still new, so the odd dish is uneven. Walk in for the bar menu and the art.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated dining room and lounge."
  },
  {
   "id": "borgo",
@@ -198,14 +206,16 @@ window.PLACES=[
   "why": "A grand, candlelit Italian room and one of my favorite date-night dinners. It made New York Magazine's best list in 2025.",
   "accolades": "New York Magazine's Best Restaurants 2025",
   "tags": [
-   "Date night"
+   "Date night",
+   "Easy on the feet",
+   "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "It's chosen for the food and a calm room more than a scene. Some find the look and menu familiar, just simply good.",
-  "heads_up": [
-   "Service can run a little cool."
-  ],
-  "tip": "Go for dinner, not lunch."
+  "note": "Calm room, simply good food. Service can be a little cool. Go for dinner, not lunch.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables or the bar."
  },
  {
   "id": "ambassadorsclubhouse",
@@ -227,14 +237,16 @@ window.PLACES=[
   "why": "London's Punjabi hit, now in New York. Go for the maximalist room and the tandoor dishes, not the curries.",
   "accolades": "Its London sibling holds a Michelin star",
   "tags": [
-   "New this year"
+   "Easy on the feet",
+   "New this year",
+   "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "Everyone loves the room. The food splits opinion: the beetroot chaat and the prawns are the standouts, but plenty find it heavy, meat-forward and a little staged.",
-  "heads_up": [
-   "The chops are good but not memorable."
-  ],
-  "tip": "Order family-style to keep the pacing smooth."
+  "note": "The room is the best part. Beetroot chaat and prawns are great; the rest can run heavy. Order family-style to keep things moving.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables; large, lively room."
  },
  {
   "id": "elder",
@@ -256,13 +268,17 @@ window.PLACES=[
   "why": "A new, meat-forward spot from a Michelin-starred chef, and my pick for a dressy dinner near Hudson Yards.",
   "accolades": "Chef Sujan Sarkar's Indienne holds a Michelin star",
   "tags": [
+   "Easy on the feet",
    "New this year",
-   "Splurge"
+   "Splurge",
+   "Walk-ins welcome"
   ],
   "host_pick": true,
+  "note": "Save room for the dessert trolley.",
   "say": "",
   "heads_up": [],
-  "tip": "Save room for the dessert trolley."
+  "tip": "",
+  "access": "Seated at banquettes or the bar; modern building."
  },
  {
   "id": "aquavit",
@@ -284,15 +300,16 @@ window.PLACES=[
   "why": "A long-running two-star room that's calmer, and kinder on the bill, than the three-star tier. A quiet favorite of mine for a long dinner.",
   "accolades": "Two Michelin stars",
   "tags": [
+   "Easy on the feet",
    "Splurge",
    "Tasting menu"
   ],
   "host_pick": true,
-  "say": "It's consistently rated very highly for an unhurried, well-served tasting, with the caviar, langoustine and halibut courses as standouts.",
-  "heads_up": [
-   "The bread and butter course is a common miss."
-  ],
-  "tip": "The tasting lunch is the easy way in, and the bar is the easiest seat at dinner. Don't skip the horseradish aquavit shot."
+  "note": "Unhurried and really well served. Caviar, langoustine and halibut are the standouts. Tasting lunch or the bar is the easy way in; get the horseradish aquavit shot.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated formal dining room."
  },
  {
   "id": "jeangeorges",
@@ -314,15 +331,17 @@ window.PLACES=[
   "why": "Classic fine dining looking right out at Central Park, and I always go back. Nougatine, the casual room next door, is the cheaper way in.",
   "accolades": "Two Michelin stars",
   "tags": [
+   "Easy on the feet",
    "Splurge",
-   "Tasting menu"
+   "Tasting menu",
+   "Views"
   ],
   "host_pick": true,
-  "say": "Regulars say it's run from good to excellent over many visits and gets less attention than it deserves. The service, the park views, the bread and the mignardises cart are what stick.",
-  "heads_up": [
-   "Nougatine can have long gaps between courses."
-  ],
-  "tip": "At Nougatine, ask for the front room. At dinner, save room for the mignardises cart."
+  "note": "Great service, park views, bread and the mignardises cart. At Nougatine, ask for the front room; courses can have long gaps.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Step-free hotel entrance; all seated."
  },
  {
   "id": "bordertown",
@@ -344,15 +363,15 @@ window.PLACES=[
   "why": "Some of the best flour tortillas in the city, from a much-loved taco pop-up that now has its own place. It's my go-to casual Brooklyn stop.",
   "accolades": "",
   "tags": [
-   "Casual",
+   "New this year",
    "Walk-ins welcome"
   ],
   "host_pick": true,
-  "say": "The flour tortillas are the whole story. It's more taco stop than long sit-down dinner.",
-  "heads_up": [
-   "There's a line to order and a longer wait for the food."
-  ],
-  "tip": "Order everything at once, because the food takes a while."
+  "note": "Come for the flour tortillas. Line to order, then a wait for food, so order everything at once.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Walk-in only; busy, with a wait and some counter service."
  },
  {
   "id": "perse",
@@ -374,15 +393,17 @@ window.PLACES=[
   "why": "Thomas Keller's New York flagship and the full special-occasion evening: park views, Oysters and Pearls, the works.",
   "accolades": "Three Michelin stars; Wine Spectator Grand Award",
   "tags": [
+   "Easy on the feet",
    "Splurge",
-   "Tasting menu"
+   "Tasting menu",
+   "Views"
   ],
   "host_pick": true,
-  "say": "Many call it a flawless special-occasion meal with service that treats you like royalty; a few find the food technically strong but rarely surprising.",
-  "heads_up": [
-   "The room and plating lean classic rather than new."
-  ],
-  "tip": ""
+  "note": "A flawless special-occasion meal and you'll be treated like royalty. Classic more than surprising.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Elevator to the 4th floor; all seated."
  },
  {
   "id": "cubbyhole",
@@ -409,12 +430,11 @@ window.PLACES=[
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "A beloved, cozy dive with a diverse crowd, and it's often packed. Lately the gripes are about service and upkeep.",
-  "heads_up": [
-   "Service can be slow.",
-   "The bathrooms can be dirty."
-  ],
-  "tip": "Bring cash."
+  "note": "Cozy, friendly dive, often packed. Service can be slow and the bathrooms aren't great. Cash only.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Tiny, crowded and mostly standing."
  },
  {
   "id": "somedaybar",
@@ -438,14 +458,17 @@ window.PLACES=[
   "tags": [
    "Brunch",
    "Cocktails",
-   "Queer bars"
+   "Easy on the feet",
+   "Late night",
+   "Queer bars",
+   "Walk-ins welcome"
   ],
   "host_pick": false,
+  "note": "Check Instagram for the night's lineup first. Drag and event nights change the noise and the crowd.",
   "say": "",
-  "heads_up": [
-   "Drag and event nights change the noise level and the crowd."
-  ],
-  "tip": "Check Instagram for the night's lineup before you head over."
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables or the bar."
  },
  {
   "id": "thestonewallinn",
@@ -469,15 +492,15 @@ window.PLACES=[
   "tags": [
    "Classic New York",
    "Late night",
-   "Queer bars"
+   "Queer bars",
+   "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "Worth seeing for the history. The common complaints are the bar service and the daytime tourist crowd.",
-  "heads_up": [
-   "Bartenders can be rude or slow.",
-   "It gets crowded on weekend nights."
-  ],
-  "tip": "Go early on a weekday evening, for the history rather than the scene."
+  "note": "Go for the history. Bar service can be slow or rude, and weekends get crowded, so go early on a weekday.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Steps at the entrance; mostly standing, lines on weekends."
  },
  {
   "id": "bemelmansbar",
@@ -499,17 +522,20 @@ window.PLACES=[
   "why": "Old New York at its most atmospheric, and an easy pairing with the Frick or the Met the same day.",
   "accolades": "",
   "tags": [
+   "Classic New York",
    "Cocktails",
+   "Easy on the feet",
    "Hotel bar",
+   "Late night",
+   "Shows & music",
    "Splurge"
   ],
   "host_pick": false,
-  "say": "Still the go-to classic hotel bar for a martini, and the service is warm. Plenty also find it touristy and too loud to talk.",
-  "heads_up": [
-   "The walk-in line is slow, you have to stay in it, and hotel guests get priority.",
-   "December crowds are the worst of the year."
-  ],
-  "tip": "Walk in on a weekday before the 5:30pm set, and join the Resy notify list."
+  "note": "The classic hotel bar martini, warm service. Touristy and loud once music starts. Walk-in line is slow, so go on a weekday before the 5:30pm set or book.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Step-free hotel entrance; seated at banquettes."
  },
  {
   "id": "martinys",
@@ -532,14 +558,17 @@ window.PLACES=[
   "accolades": "No. 46 on the World's 50 Best Bars 2026; No. 23 on North America's 50 Best Bars 2026",
   "tags": [
    "Cocktails",
+   "Date night",
+   "Easy on the feet",
+   "Late night",
    "Splurge"
   ],
   "host_pick": false,
-  "say": "Cocktail people call it fantastic, and it suits a special occasion. It's in the league of the city's nicer, hard-to-book bars.",
-  "heads_up": [
-   "It's hard to get in without booking ahead."
-  ],
-  "tip": ""
+  "note": "Fantastic cocktails, great for a special occasion. Hard to get in without booking ahead.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated service in a carriage house."
  },
  {
   "id": "barpisellino",
@@ -562,14 +591,15 @@ window.PLACES=[
   "accolades": "",
   "tags": [
    "Cocktails",
+   "Coffee & breakfast",
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "The spritzes and the cappuccino are the draw. It's tiny and fills up at peak hours.",
-  "heads_up": [
-   "It's mostly standing room."
-  ],
-  "tip": "Go in the afternoon or early on a weekday."
+  "note": "Great spritzes and cappuccino. Tiny, mostly standing room, fills up at peak. Go in the afternoon or early on a weekday.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Tiny and mostly standing."
  },
  {
   "id": "thefrickkentmonkmanshow",
@@ -591,14 +621,16 @@ window.PLACES=[
   "why": "A small, beautiful show: Kent Monkman's paintings in conversation with the Frick's Vermeer.",
   "accolades": "",
   "tags": [
+   "Classic New York",
+   "Easy on the feet",
    "Museums & culture"
   ],
   "host_pick": false,
-  "say": "The Frick is rated very highly for its masterpieces and the intimate house.",
-  "heads_up": [
-   "Walk-in lines can be long without a timed ticket."
-  ],
-  "tip": "Pair it with Bemelmans, ten minutes' walk."
+  "note": "Gorgeous masterpieces in an intimate house. Get a timed ticket to skip the line, then walk ~10 min to Bemelmans.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Step-free; benches in galleries and wheelchairs available."
  },
  {
   "id": "aireancientbathstribeca",
@@ -617,19 +649,19 @@ window.PLACES=[
   "hours_note": "Mon–Thu 10am–10pm; Fri–Sun 8am–11pm. Holiday hours may differ.",
   "what_to_order": "The thermal pools (hot, cold and the flotarium) and a salt scrub.",
   "vibe": "Candlelit Roman-style baths in a converted warehouse. Calm on a weekday morning; weekends can bring loud groups.",
-  "why": "A warm, quiet reset in the middle of winter. There's also an Upper East Side location, and regulars prefer it.",
+  "why": "A warm, quiet reset in the middle of winter. Upper East Side location has a slightly better vibe, but both are solid.",
   "accolades": "",
   "tags": [
+   "Date night",
    "Spa",
    "Splurge"
   ],
   "host_pick": false,
-  "say": "Most love it, though the Upper East Side location is often described as newer, better laid out and more relaxing. Tribeca draws complaints about loud groups, upkeep and mix-ups over massage bookings.",
-  "heads_up": [
-   "The massages are the weak part of the visit.",
-   "The skylight pool room may be closed for renovation, so confirm which pools are open."
-  ],
-  "tip": "Book the baths only, on a weekday, and get your massage somewhere else."
+  "note": "Book the baths only, on a weekday, and get your massage somewhere else. Weekends can bring loud groups; check which pools are open.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Barefoot on wet stone floors; steps and stairs into pools."
  },
  {
   "id": "fifthaveholidaywindowssakslightshow",
@@ -654,11 +686,11 @@ window.PLACES=[
    "Holiday season"
   ],
   "host_pick": false,
+  "note": "Crowds get heavy evenings and weekends. Weekday mornings are the calmest.",
   "say": "",
-  "heads_up": [
-   "Crowds get heavy, especially evenings and weekends."
-  ],
-  "tip": "Weekday mornings are the calmest."
+  "heads_up": [],
+  "tip": "",
+  "access": "Outdoors on the sidewalk; long standing and walking in crowds."
  },
  {
   "id": "themetoperadecember",
@@ -680,13 +712,17 @@ window.PLACES=[
   "why": "The grandest night out in December. Maria Stuarda is the pick if you want high drama.",
   "accolades": "",
   "tags": [
-   "Museums & culture",
+   "Classic New York",
+   "Easy on the feet",
+   "Shows & music",
    "Splurge"
   ],
   "host_pick": false,
+  "note": "Buy direct from metopera.org to avoid resale fees.",
   "say": "",
   "heads_up": [],
-  "tip": "Buy direct from metopera.org to avoid resale fees."
+  "tip": "",
+  "access": "Elevators to all seating levels; seated for performances."
  },
  {
   "id": "themetkrasnerpollock",
@@ -708,12 +744,15 @@ window.PLACES=[
   "why": "The first major New York look at Lee Krasner in over 20 years, hung side by side with Jackson Pollock across 120+ works.",
   "accolades": "Four and a half stars from The Art Newspaper",
   "tags": [
+   "Classic New York",
    "Museums & culture"
   ],
   "host_pick": false,
-  "say": "Widely called gorgeous and mostly convincing, though some question the Krasner-heavy later section.",
+  "note": "Gorgeous and mostly convincing, though the later section leans heavy on Krasner. Go on a weekday morning, or a Friday or Saturday evening when it's open late.",
+  "say": "",
   "heads_up": [],
-  "tip": "Go on a weekday morning, or a Friday or Saturday evening when it's open late."
+  "tip": "",
+  "access": "Large galleries with long walking; wheelchairs and stools on loan."
  },
  {
   "id": "clementatthepeninsula",
@@ -736,14 +775,15 @@ window.PLACES=[
   "accolades": "",
   "tags": [
    "Brunch",
+   "Easy on the feet",
    "Splurge"
   ],
   "host_pick": false,
-  "say": "The service and the room get the most love. A few recent visitors found Sunday brunch good but not special.",
-  "heads_up": [
-   "The food can be inconsistent."
-  ],
-  "tip": ""
+  "note": "The service and the room are the best part. Food can be inconsistent, and Sunday is good but not special.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Hotel dining room, seated; elevator to Floor 2."
  },
  {
   "id": "balthazar",
@@ -766,15 +806,17 @@ window.PLACES=[
   "accolades": "",
   "tags": [
    "Brunch",
-   "Classic New York"
+   "Classic New York",
+   "Coffee & breakfast",
+   "Easy on the feet",
+   "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "People love the service and the room, but lately some find it very loud and the food uneven.",
-  "heads_up": [
-   "Weekend brunch without a booking means a 30-60 minute wait.",
-   "It's very loud."
-  ],
-  "tip": "Go for weekday breakfast at 7:30am and walk straight in."
+  "note": "Love the room and the service. Very loud, food can be uneven. Weekday breakfast at 7:30am, walk straight in; weekend brunch without a booking is a 30-60 min wait.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at banquettes; busy, loud room."
  },
  {
   "id": "ilili",
@@ -796,14 +838,16 @@ window.PLACES=[
   "why": "Upscale Lebanese that travels well. Order delivery from ilili's own online store, or sit down at the NoMad original.",
   "accolades": "Time Out's best Middle Eastern restaurants in NYC (July 2026)",
   "tags": [
-   "Delivery"
+   "Brunch",
+   "Delivery",
+   "Easy on the feet"
   ],
   "host_pick": false,
-  "say": "The duck shawarma, hummus and falafel draw the praise, and the waiters are attentive. Locals prefer this NoMad original to the Midtown branch.",
-  "heads_up": [
-   "The room is loud, and service can be slow."
-  ],
-  "tip": "Save room for the knafeh."
+  "note": "Duck shawarma, hummus and falafel are great. Loud room, service can be slow. Stick to this NoMad original over Midtown, and save room for the knafeh.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated dining room."
  },
  {
   "id": "auzaatar",
@@ -825,15 +869,16 @@ window.PLACES=[
   "why": "Easygoing East Village Lebanese for a night in. Order on DoorDash or Caviar, or direct from their own site.",
   "accolades": "",
   "tags": [
-   "Delivery"
+   "Delivery",
+   "Easy on the feet",
+   "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "The lamb kebabs, spicy hummus and mixed grill are the favorites.",
-  "heads_up": [
-   "Dining in at the East Village spot, service can be slow and inattentive.",
-   "The tables are small."
-  ],
-  "tip": ""
+  "note": "Lamb kebabs, spicy hummus and the mixed grill are the favorites. Better as delivery; dining in, service is slow and tables are small.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Small casual cafe; seated."
  },
  {
   "id": "balade",
@@ -855,14 +900,15 @@ window.PLACES=[
   "why": "Casual Lebanese where the pitza, their Lebanese flatbread pizza, is the draw. Order on Uber Eats.",
   "accolades": "",
   "tags": [
-   "Delivery"
+   "Delivery",
+   "Easy on the feet"
   ],
   "host_pick": false,
-  "say": "Both the dining room and the delivery are well rated.",
-  "heads_up": [
-   "Delivery orders occasionally come with a missing item, so check the bag."
-  ],
-  "tip": ""
+  "note": "Dining room and delivery are both solid. Check the bag, an item goes missing now and then.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated; cozy and lively with a bar."
  },
  {
   "id": "jungsik",
@@ -884,19 +930,18 @@ window.PLACES=[
   "why": "The first Korean restaurant in the US to earn three Michelin stars, and still the reference point for Korean fine dining here. The opening banchan bites show the kitchen at its sharpest.",
   "accolades": "Three Michelin stars",
   "tags": [
-   "Crowd favorite",
    "Date night",
+   "Easy on the feet",
    "Hard to book",
    "Splurge",
    "Tasting menu"
   ],
   "host_pick": false,
-  "say": "It keeps coming up as the Michelin tasting menu to pick, and some count it among their best meals of the year. The opening run of banchan and the fried octopus are what people remember.",
-  "heads_up": [
-   "The middle and later courses can feel formulaic.",
-   "The galbi is well cooked but light on char."
-  ],
-  "tip": "The bar is the easier seat to land."
+  "note": "One of the best tasting menus in town. Opening banchan and fried octopus are the highlights; later courses can feel formulaic. The bar is the easier seat.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated tasting menu."
  },
  {
   "id": "minettatavern",
@@ -919,18 +964,17 @@ window.PLACES=[
   "accolades": "In the Michelin Guide",
   "tags": [
    "Classic New York",
-   "Crowd favorite",
    "Date night",
+   "Easy on the feet",
    "Hard to book",
-   "Late night"
+   "Splurge"
   ],
   "host_pick": false,
-  "say": "Regulars call it the simple answer for a classic, lively dinner. Lean on the meat and you'll be happy.",
-  "heads_up": [
-   "Some find the Black Label Burger overrated.",
-   "Brunch dishes can be indifferent, and waits run long when it's full."
-  ],
-  "tip": "On a bigger night, share the dry-aged côte de boeuf for two."
+  "note": "Classic, lively dinner. Lean on the meat; the burger is a bit overrated. On a bigger night, share the côte de boeuf for two.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated on banquettes; very packed."
  },
  {
   "id": "gramercytavern",
@@ -953,19 +997,18 @@ window.PLACES=[
   "accolades": "One Michelin star",
   "tags": [
    "Classic New York",
-   "Crowd favorite",
    "Date night",
+   "Easy on the feet",
    "Splurge",
    "Tasting menu",
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "It's called outstanding front and back, with a bar meal that's always a good time and a long record of no bad meals. Many think the Tavern burger and the front room beat the Dining Room tasting.",
-  "heads_up": [
-   "The Dining Room tasting can feel safe and not very memorable.",
-   "Tavern walk-in waits run around 30 minutes on Friday evenings."
-  ],
-  "tip": "Walk into the Tavern bar early or mid-afternoon to skip the wait."
+  "note": "Outstanding front and back, but the Tavern burger and front room beat the tasting. Walk into the Tavern bar early or mid-afternoon; ~30 min wait Friday evenings.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated at tables or the tavern bar."
  },
  {
   "id": "lattedor",
@@ -988,16 +1031,16 @@ window.PLACES=[
   "accolades": "In the Michelin Guide and its Best Steakhouses in New York City; Time Out 4 out of 5 stars",
   "tags": [
    "Cocktails",
-   "Crowd favorite",
    "Date night",
+   "Easy on the feet",
    "Splurge"
   ],
   "host_pick": false,
-  "say": "It's described as a Michelin-level restaurant that's also a top-five steakhouse. The bar, the tableside Caesar and the prime rib trolley are the highlights.",
-  "heads_up": [
-   "Some find the steak itself less exciting than the rest of the meal."
-  ],
-  "tip": ""
+  "note": "Michelin-level and a top-five steakhouse. The bar, tableside Caesar and prime rib trolley are the highlights; the steak itself is less exciting than the rest.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Seated in a large dining room."
  },
  {
   "id": "kingcolebarstregis",
@@ -1021,17 +1064,16 @@ window.PLACES=[
   "tags": [
    "Classic New York",
    "Cocktails",
-   "Crowd favorite",
+   "Easy on the feet",
    "Hotel bar",
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "A favorite among the city's classic hotel bars. The mural and the free snack mix get a lot of affection.",
-  "heads_up": [
-   "Weekend crowds lean heavily toward tourists.",
-   "It can get too loud for conversation."
-  ],
-  "tip": "Make it part of a hotel-bar circuit with Bemelmans."
+  "note": "Love the mural and the free snack mix. Touristy on weekends and can get too loud to talk. Pair it with Bemelmans.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Step-free hotel entrance; seated lounge."
  },
  {
   "id": "thecampbell",
@@ -1055,17 +1097,15 @@ window.PLACES=[
   "tags": [
    "Classic New York",
    "Cocktails",
-   "Crowd favorite",
    "Late night",
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "The restored room wins more fans than the drinks. It's a standby for a classy cocktail in Grand Central, and the martini holds up.",
-  "heads_up": [
-   "Specialty cocktails range from decent to forgettable.",
-   "Service can lag when it's packed with commuters."
-  ],
-  "tip": "Order a well-made classic and come for the room."
+  "note": "Come for the room and order a classic; the martini holds up, the specialty drinks don't. Service lags when it's packed with commuters.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Up from street level in Grand Central; seated armchairs."
  },
  {
   "id": "littlebranch",
@@ -1089,17 +1129,17 @@ window.PLACES=[
   "tags": [
    "Classic New York",
    "Cocktails",
-   "Crowd favorite",
    "Date night",
    "Late night",
+   "Shows & music",
    "Walk-ins welcome"
   ],
   "host_pick": false,
-  "say": "Recommended over and over for great drinks in a candlelit basement, and the classic cocktails get called masterful.",
-  "heads_up": [
-   "Expect about a 30-minute line on busy nights, and it gets crowded inside."
-  ],
-  "tip": "Mind the house rules: no hats for men, and keep your voice down."
+  "note": "This spot has great drinks and a candlelit basement. Can get really crowded, ~30 min line outside. No hats for men, and keep your voice down.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Down a steep flight of stairs; mostly standing."
  },
  {
   "id": "raineslawroomchelsea",
@@ -1122,15 +1162,14 @@ window.PLACES=[
   "accolades": "Cocktail program led by Meaghan Dorman",
   "tags": [
    "Cocktails",
-   "Crowd favorite",
    "Date night",
    "Late night"
   ],
   "host_pick": false,
-  "say": "A favorite dark cocktail bar: very dim and comfortable, with good drinks. The hidden back-room bar and the classic-leaning list earn the praise.",
-  "heads_up": [
-   "There's no bar to sit at. It's table service only."
-  ],
-  "tip": "If Chelsea's full, The William on E 39th holds seats for walk-ins."
+  "note": "Very dim and comfortable, with good drinks. No bar to sit at, table service only. If it's full, The William on E 39th holds walk-in seats.",
+  "say": "",
+  "heads_up": [],
+  "tip": "",
+  "access": "Doorbell entry; deep, low couches."
  }
 ];
