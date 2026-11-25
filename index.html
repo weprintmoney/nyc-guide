@@ -91,9 +91,9 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <body>
 <header>
   <h1>NYC, Well Spent</h1>
-  <p class="lede" id="lede">Where to eat, drink and spend an afternoon, with prices, how to get in and what to order. Tap ☆ to save places and build your own days. "Diners say" sums up recent reviews, minus the "too expensive" complaints.</p>
+  <p class="lede" id="lede">This is my short list for New York right now: where I'd eat, drink and spend an afternoon. Filter by what you're in the mood for and tap a pin for the details. Hit ☆ on anything that sounds good and build your own days from there.</p>
 </header>
-<p class="checknote" id="checknote"></p>
+<p class="checknote" id="checknote">Everything here was checked on <b>2026-11-24</b>. Hours and booking rules change, so confirm on the <b>Book</b> or <b>Hours &amp; reviews</b> link before you go.</p>
 <div class="filters" id="filters">
   <button class="chip" data-cat="all" aria-pressed="true">All</button>
   <button class="chip" data-cat="eat" aria-pressed="false">Eat</button>
@@ -113,7 +113,7 @@ details summary{cursor:pointer;color:var(--muted);font-size:13px;margin-top:8px}
 <p class="note" id="footnote"></p>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
-<script src="data.js"></script>
+<script src="data.js?v=400e7d9e"></script>
 <script>
 (function(){
 const P = (window.PLACES||[]).map((p,i)=>({...p,id:p.id||('p'+i)}));
@@ -206,8 +206,6 @@ document.addEventListener('click',e=>{
   else if(t.dataset.focus){ focus(t.dataset.focus); }
 });
 ['hood','price','tag'].forEach(k=>$('#'+k).addEventListener('change',e=>{state[k]=e.target.value;render();}));
-if(window.PAGE_COPY&&window.PAGE_COPY.lede) $('#lede').textContent=window.PAGE_COPY.lede;
-$('#checknote').innerHTML=(window.PAGE_COPY&&window.PAGE_COPY.checknote)||`<b>Checked ${window.PLACES_UPDATED||''}.</b> Prices, hours and booking windows come from each venue's page where we could reach it, and from recent guides and reviews otherwise. Before you go, confirm on the <b>Book</b> or <b>Hours &amp; reviews</b> link.`;
 $('#footnote').textContent=`Researched ${window.PLACES_UPDATED||''}. Prices and hours change, so check the booking page before you go. Saved places stay in this browser only.`;
 render();
 })();

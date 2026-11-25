@@ -2,7 +2,7 @@
 
 Usage: python3 build.py <places.json>... --reviews <reviews.json>... [--host-picks name,name]
 """
-import json, re, sys, datetime, pathlib
+import json, re, sys, datetime, pathlib, hashlib
 
 args = sys.argv[1:]
 places_files, review_files, host = [], [], set()
@@ -99,3 +99,8 @@ pathlib.Path("data.js").write_text(
 print(f"{len(out)} places, {sum(1 for p in out if p.get('say'))} with notes")
 for x in problems:
     print("WARN", x)
+
+# cache-bust: point index.html at data.js?v=<content hash> so updates show immediately
+v = hashlib.sha1(pathlib.Path("data.js").read_bytes()).hexdigest()[:8]
+idx = pathlib.Path("index.html")
+idx.write_text(re.sub(r'<script src="data\.js(\?v=[0-9a-f]+)?"></script>', f'<script src="data.js?v={v}"></script>', idx.read_text()))
