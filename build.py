@@ -100,7 +100,8 @@ TAG_MAP = {"splurge": "Splurge", "luxe": "Splurge", "tasting-menu": "Tasting men
     "art": "Museums & culture", "delivery": "Delivery", "crowd-favorite": "Crowd favorite", "holiday": "Holiday season",
     "spa": "Spa", "casual": "Casual"}
 NAME_MAP = {"King Cole Bar (St. Regis)": "King Cole Bar at the St. Regis", "Raines Law Room (Chelsea)": "Raines Law Room",
-    "The Met Opera (December)": "The Met Opera"}
+    "The Met Opera (December)": "The Met Opera",
+    "NYC Ballet: George Balanchine's The Nutcracker": "The Nutcracker at NYC Ballet", "Nordstrom NYC Flagship": "Nordstrom (57th St flagship)"}
 PRICE_FIX = {"bordertown": "$$", "iara": "$$", "bemelmansbar": "$$$", "minettatavern": "$$$$",
              "fifthaveholidaywindowssakslightshow": "Free", "fifthavenueholidaywindowsandthesakslightshow": "Free"}
 TAG_DROP = {"clementatthepeninsulanewyork": {"hotel"}, "clementatthepeninsula": {"hotel"},
@@ -142,7 +143,7 @@ pathlib.Path("data.js").write_text(
     f"window.PLACES_UPDATED={json.dumps(datetime.date.today().isoformat())};\n"
     f"window.PLACES={body};\n"
 )
-print(f"{len(out)} places, {sum(1 for p in out if p.get('say'))} with notes")
+print(f"{len(out)} places, {sum(1 for p in out if p.get('note'))} with notes")
 for x in problems:
     print("WARN", x)
 
