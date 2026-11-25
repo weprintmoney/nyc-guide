@@ -1346,7 +1346,7 @@ window.PLACES=[
   "hours_note": "Open daily from 4pm.",
   "what_to_order": "Riesling, whatever they're excited about, and the burger.",
   "vibe": "Loud, friendly, wine-nerd clubhouse with a sense of humor.",
-  "why": "It's the name wine people say first, every time, and it's a fun counterpoint to the polished spots.",
+  "why": "My first answer for a wine bar, every time, and a fun, unfussy room.",
   "accolades": "",
   "tags": [
    "Walk-ins welcome",
